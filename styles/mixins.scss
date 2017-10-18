@@ -1,0 +1,17 @@
+@import "variables.scss";
+
+@mixin mainFontBig($colorValue) {
+    color: $colorValue;
+    font-family: $mainFont;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 25px;
+}
+
+@mixin mainFontSmall($colorValue) {
+    color: $colorValue;
+    font-family: $mainFont;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 27px;
+}

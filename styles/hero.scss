@@ -1,0 +1,60 @@
+.b-hero {
+  padding: 50px 0;
+  
+  .b-hero__wrapper {
+    width: 96%;
+    max-width: 1200px;
+    
+    padding: 0 2%;
+    // background-image: url("../files/heroBackground.png");
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: 95% 95%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: space-around;
+    .b-hero__slogan-wrapper {
+      width: 100%;
+      .b-hero__slogan {
+        padding-top: 20%;
+        @include mainFontBig($mainFontColor);
+      }
+      .b-hero__text {
+        @include mainFontSmall($mainFontColor);
+        padding-top: 4%;
+        text-align: justify;
+      }
+      .b-hero__button {
+        margin-top: 30px;
+        border: 0;
+        width: 202px;
+        height: 57px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        background-color: #ff6033;
+        &:hover {
+          background-color: #ad5036;
+          cursor: pointer;
+        }
+        .b-hero__button-text {
+          width: 150px;
+          height: 15px;
+          color: #ffffff;
+          font-family: Raleway;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 27px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .b-hero__scroll-button {
+      width: 60%;
+      align-self: center;
+      text-align: center;
+      padding: 15% 0 .1% 0;
+    }
+  }
+}
