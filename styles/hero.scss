@@ -30,15 +30,15 @@
         width: 202px;
         height: 57px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        background-color: #ff6033;
+        background-color: $heroButtonBackgroundColor;
         &:hover {
-          background-color: #ad5036;
+          background-color: $heroButtonOnHoverBackgroundColor;
           cursor: pointer;
         }
         .b-hero__button-text {
           width: 150px;
           height: 15px;
-          color: #ffffff;
+          color: $altFontColor;
           font-family: Raleway;
           font-size: 20px;
           font-weight: 300;
