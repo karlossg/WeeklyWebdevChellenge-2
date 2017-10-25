@@ -1,0 +1,106 @@
+.b-gallery {
+  background-color: $galleryBackgroundColor;
+  .b-gallery__wrapper {
+    padding: 5% 0;
+    padding-left: 3%;
+    width: 100%;
+    max-width: 1200px;
+    .b-gallery__text-wrapper {
+      width: 577px;
+      text-align: center;
+      h1 {
+        color: $mainFontColor;
+        font-family: $mainFont;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 27px;
+        margin-bottom: 10%;
+      }
+      p {
+        @include mainFontSmall($mainFontColor);
+        margin-bottom: 10%;
+      }
+    }
+    .b-gallery__images-wrapper {
+      .b-gallery__images-top {
+        display: flex;
+        justify-content: space-between;
+        .b-gallery__images-small {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
+      .b-gallery__images-bottom {
+        margin-top: 2%;
+        display: flex;
+        justify-content: space-around;
+      }
+      .b-gallery__image {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        img {
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        a {
+          display: block;
+          position: absolute;
+          top: -100%;
+          opacity: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          text-align: center;
+          color: inherit;
+          .fa-search-plus {
+            color: $mainFontColor;
+          }
+        }
+        &:hover img {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+        &:hover a {
+          opacity: 1;
+          /* added */
+          top: 0;
+          /* added */
+          z-index: 500;
+          span {
+            top: 50%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+    .b-gallery__button-wrapper {
+      margin-top: 3%;
+      text-align: center;
+      .b-gallery__button {
+        border: 0;
+        width: 202px;
+        height: 57px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        background-color: #5585a2;
+        &:hover {
+          background-color: #3c6a85;
+          cursor: pointer;
+        }
+        .b-gallery__button-text {
+          width: 114px;
+          height: 15px;
+          color: #ffffff;
+          font-family: Raleway;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 27px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

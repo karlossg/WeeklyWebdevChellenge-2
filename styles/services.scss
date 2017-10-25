@@ -1,51 +1,73 @@
 .b-services {
-    background-color: $servicesBackground;
-    .b-services__wrapper {
+  background-color: $servicesBackground;
+  .b-services__wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 0;
+    padding-left: 3%;
+    width: 96%;
+    max-width: 1200px;
+    .b-services__btn-wrapper {
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
-      padding: 5% 0;
-      width: 96%;
-      max-width: 1200px;
-      .b-services__btn-wrapper {
+      max-height: 462px;
+      margin-top: 6%;
+      .b-services__btn-text {
+        width: 422px;
+        height: 102px;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         display: flex;
-        flex-direction: column;  
-        justify-content: space-around;
-        .b-services__btn-text {
-          width: 422px;
-          height: 122px;
-          background-color: #fff;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-          display: flex;
-          align-content: space-around;
-          justify-content: center;
-          align-items: center;
-          h2 {
-           
-           
-            text-align: center;
-            width: 70%;
-          }
-          
-          }
-          .b-services__btn-image {
-            text-align: center;
-            float: right;
-            border-left: solid 2px #9d9d9d;
-            width: 30%;
-            height: 100%;
-            img {
-              padding: 30% 0;
-            }
-            
-            
-          }
+        align-content: space-around;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          text-align: center;
+          width: 70%;
+          color: $mainFontColor;
+          font-family: $mainFont;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 27px;
+        }
+        &:hover {
+          background-color: #e0bfbf;
+          cursor: pointer;
+        }
+      }
+      .b-services__btn-image {
+        text-align: center;
+        float: right;
+        border-left: solid 2px #9d9d9d;
+        width: 30%;
+        height: 100%;
+        img {
+          padding: 20% 0;
         }
       }
     }
-    
-    
-  
-          
-  
-  
-  
+    .b-services__slogan-wrapper {
+      padding-left: 5%;
+      .b-services__slogan-image {
+        margin-left: 30%;
+        width: 462px;
+        height: 527px;
+      }
+      .b-services__slogan-text {
+        position: relative;
+        bottom: 280px;
+        left: 115px;
+        .b-services__name-text {
+          width: 700px;
+          height: 67px;
+          color: #ffffff;
+          font-family: Raleway;
+          font-size: 90px;
+          font-weight: 700;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+}
