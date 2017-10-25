@@ -1,31 +1,25 @@
 .b-about {
   background-color: $aboutBackgroundColor;
   .b-about__wrapper {
-    max-width: 1200px;
+    max-width: 1500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     .b-about__text-wrapper {
       width: 70%;
+      padding-top: 15%;
       padding-bottom: 15%;
+      max-width: 31em;
       .b-about__title {
         @include mainFontHuge($altFontColor);
-        padding: 2%;
-        margin-bottom: 5%; 
+        margin-bottom: 10%;
       }
       .b-about__text {
-        padding: 2%;
-        width: 31em;
-        height: 4em;
         @include mainFontSmall($altFontColor);
         span {
           display: block;
-          margin-top: 2%;
         }
       }
-    }
-    .b-about__image {
-      margin-right: 8%;
     }
   }
 }

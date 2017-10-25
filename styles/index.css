@@ -102,35 +102,30 @@
 .b-about {
   background-color: #00c4c4; }
   .b-about .b-about__wrapper {
-    max-width: 1200px;
+    max-width: 1500px;
     display: flex;
     justify-content: space-around;
     align-items: center; }
     .b-about .b-about__wrapper .b-about__text-wrapper {
       width: 70%;
-      padding-bottom: 15%; }
+      padding-top: 15%;
+      padding-bottom: 15%;
+      max-width: 31em; }
       .b-about .b-about__wrapper .b-about__text-wrapper .b-about__title {
         color: #fff;
         font-family: Raleway;
         font-size: 90px;
         font-weight: 700;
         line-height: 27px;
-        padding: 2%;
-        margin-bottom: 5%; }
+        margin-bottom: 10%; }
       .b-about .b-about__wrapper .b-about__text-wrapper .b-about__text {
-        padding: 2%;
-        width: 31em;
-        height: 4em;
         color: #fff;
         font-family: Raleway;
         font-size: 17px;
         font-weight: 300;
         line-height: 27px; }
         .b-about .b-about__wrapper .b-about__text-wrapper .b-about__text span {
-          display: block;
-          margin-top: 2%; }
-    .b-about .b-about__wrapper .b-about__image {
-      margin-right: 8%; }
+          display: block; }
 
 .b-services {
   background-color: #70bfff; }
@@ -139,7 +134,7 @@
     justify-content: space-around;
     padding: 5% 0;
     padding-left: 3%;
-    max-width: 1200px; }
+    max-width: 1500px; }
     .b-services .b-services__wrapper .b-services__btn-wrapper {
       display: flex;
       flex-direction: column;
@@ -177,11 +172,11 @@
     .b-services .b-services__wrapper .b-services__slogan-wrapper {
       padding-left: 5%; }
       .b-services .b-services__wrapper .b-services__slogan-wrapper .b-services__slogan-image {
-        margin-left: 30%; }
+        padding-left: 2%; }
       .b-services .b-services__wrapper .b-services__slogan-wrapper .b-services__slogan-text {
         position: relative;
         bottom: 50%;
-        left: 13%; }
+        left: -15%; }
         .b-services .b-services__wrapper .b-services__slogan-wrapper .b-services__slogan-text .b-services__name-text {
           color: #fff;
           font-family: Raleway;
