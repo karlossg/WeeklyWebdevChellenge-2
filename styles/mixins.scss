@@ -1,5 +1,14 @@
 @import "variables.scss";
 
+
+@mixin mainFontHuge($colorValue) {
+    color: $colorValue;
+    font-family: $mainFont;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
 @mixin mainFontBig($colorValue) {
     color: $colorValue;
     font-family: $mainFont;
@@ -14,4 +23,13 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 27px;
+}
+
+@mixin mainFontButton($colorValue) {
+    color: $colorValue;
+    font-family: $mainFont;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+    text-transform: uppercase;
 }

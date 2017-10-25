@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Pacifico");
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,900");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900");
 * {
   margin: 0 auto;
   padding: 0; }
@@ -117,14 +117,15 @@
     align-items: center; }
     .b-about .b-about__wrapper .b-about__text-wrapper {
       width: 70%;
-      padding-bottom: 20%; }
+      padding-bottom: 15%; }
       .b-about .b-about__wrapper .b-about__text-wrapper .b-about__title {
         color: #fff;
         font-family: Raleway;
-        font-size: 60px;
-        font-weight: 900;
-        line-height: 25px;
-        padding: 2%; }
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 27px;
+        padding: 2%;
+        margin-bottom: 5%; }
       .b-about .b-about__wrapper .b-about__text-wrapper .b-about__text {
         padding: 2%;
         width: 510px;
@@ -136,7 +137,7 @@
         line-height: 27px; }
         .b-about .b-about__wrapper .b-about__text-wrapper .b-about__text span {
           display: block;
-          margin-top: 10px; }
+          margin-top: 2%; }
     .b-about .b-about__wrapper .b-about__image {
       margin-right: 8%; }
 
@@ -159,7 +160,7 @@
         width: 422px;
         height: 102px;
         background-color: #fff;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         display: flex;
         align-content: space-around;
         justify-content: center;
@@ -196,7 +197,7 @@
         .b-services .b-services__wrapper .b-services__slogan-wrapper .b-services__slogan-text .b-services__name-text {
           width: 700px;
           height: 67px;
-          color: #ffffff;
+          color: #fff;
           font-family: Raleway;
           font-size: 90px;
           font-weight: 700;
@@ -285,11 +286,12 @@
         .b-gallery .b-gallery__wrapper .b-gallery__button-wrapper .b-gallery__button .b-gallery__button-text {
           width: 114px;
           height: 15px;
-          color: #ffffff;
+          color: #fff;
           font-family: Raleway;
           font-size: 20px;
           font-weight: 300;
           line-height: 27px;
+          text-transform: uppercase;
           text-transform: uppercase; }
 
 .b-subscribe {
@@ -297,7 +299,55 @@
   background-color: #F9F8FB;
   background-repeat: no-repeat;
   background-size: cover contain;
-  background-position: center;
-  height: 500px; }
+  background-position: center; }
+  .b-subscribe .b-subscribe__wrapper {
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8% 0;
+    padding-left: 3%; }
+    .b-subscribe .b-subscribe__wrapper .b-subscribe__text-wrapper h1 {
+      color: #262626;
+      font-family: Raleway;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 27px;
+      margin-bottom: 2%; }
+    .b-subscribe .b-subscribe__wrapper .b-subscribe__text-wrapper p {
+      color: #262626;
+      font-family: Raleway;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 27px;
+      margin-bottom: 2%; }
+    .b-subscribe .b-subscribe__wrapper .b-subscribe__form-wrapper .b-subscribe__form-input {
+      width: 560px;
+      height: 55px;
+      opacity: 0.5;
+      color: #262626;
+      font-family: Raleway;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 27px; }
+    .b-subscribe .b-subscribe__wrapper .b-subscribe__form-wrapper .b-subscribe__form-button {
+      margin-left: 25px;
+      border: 0;
+      width: 172px;
+      height: 57px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      background-color: #96b92c;
+      color: #fff;
+      font-family: Raleway;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 27px;
+      text-transform: uppercase; }
+      .b-subscribe .b-subscribe__wrapper .b-subscribe__form-wrapper .b-subscribe__form-button:hover {
+        background-color: #839646;
+        cursor: pointer; }
+
+.b-blog {
+  background-color: #b07cf7;
+  height: 90vh; }
 
 /*# sourceMappingURL=index.css.map */

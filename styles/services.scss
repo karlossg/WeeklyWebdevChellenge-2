@@ -17,7 +17,7 @@
         width: 422px;
         height: 102px;
         background-color: #fff;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: $BoxShadow;
         display: flex;
         align-content: space-around;
         justify-content: center;
@@ -61,11 +61,7 @@
         .b-services__name-text {
           width: 700px;
           height: 67px;
-          color: #ffffff;
-          font-family: Raleway;
-          font-size: 90px;
-          font-weight: 700;
-          line-height: 27px;
+          @include mainFontHuge($altFontColor);
         }
       }
     }

@@ -1,8 +1,59 @@
 .b-subscribe {
-    background-image: url("../files/subscripeImage.png");
-    background-color: $headerBackground;
-    background-repeat: no-repeat;
-    background-size: cover contain;
-    background-position: center;
-    height: 500px;
+  background-image: url("../files/subscripeImage.png");
+  background-color: $headerBackground;
+  background-repeat: no-repeat;
+  background-size: cover contain;
+  background-position: center;
+  
+  .b-subscribe__wrapper {
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 8% 0;
+    padding-left: 3%;
+    .b-subscribe__text-wrapper {
+      h1 {
+        color: #262626;
+        font-family: Raleway;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 27px;
+        margin-bottom: 2%;
+      }
+      p {
+        color: #262626;
+        font-family: Raleway;
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 27px;
+        margin-bottom: 2%;
+      }
+    }
+    .b-subscribe__form-wrapper {
+      .b-subscribe__form-input {
+          width: 560px;
+          height: 55px;
+          opacity: 0.5;
+          color: #262626;
+          font-family: Raleway;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 27px;
+      }
+      .b-subscribe__form-button {
+        margin-left: 25px;
+        border: 0;
+        width: 172px;
+        height: 57px;
+        box-shadow: $BoxShadow;
+        background-color: #96b92c;
+        @include mainFontButton($altFontColor);
+        &:hover {
+            background-color: #839646;
+            cursor: pointer;
+        }
+
+      }
+    }
+  }
 }

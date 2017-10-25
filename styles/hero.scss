@@ -1,12 +1,9 @@
 .b-hero {
   padding: 50px 0;
-  
   .b-hero__wrapper {
     width: 96%;
     max-width: 1200px;
-    
     padding: 0 2%;
-    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -29,7 +26,7 @@
         border: 0;
         width: 202px;
         height: 57px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: $BoxShadow;
         background-color: $heroButtonBackgroundColor;
         &:hover {
           background-color: $heroButtonOnHoverBackgroundColor;
@@ -38,12 +35,7 @@
         .b-hero__button-text {
           width: 150px;
           height: 15px;
-          color: $altFontColor;
-          font-family: Raleway;
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 27px;
-          text-transform: uppercase;
+          @include mainFontButton($altFontColor);
         }
       }
     }

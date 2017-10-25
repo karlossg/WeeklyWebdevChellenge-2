@@ -10,10 +10,11 @@
     align-items: center;
     .b-about__text-wrapper {
       width: 70%;
-      padding-bottom: 20%;
+      padding-bottom: 15%;
       .b-about__title {
-        @include mainFontBig($altFontColor);
+        @include mainFontHuge($altFontColor);
         padding: 2%;
+        margin-bottom: 5%; 
       }
       .b-about__text {
         padding: 2%;
@@ -22,7 +23,7 @@
         @include mainFontSmall($altFontColor);
         span {
           display: block;
-          margin-top: 10px;
+          margin-top: 2%;
         }
       }
     }

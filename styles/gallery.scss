@@ -9,11 +9,7 @@
       width: 577px;
       text-align: center;
       h1 {
-        color: $mainFontColor;
-        font-family: $mainFont;
-        font-size: 90px;
-        font-weight: 700;
-        line-height: 27px;
+        @include mainFontHuge($mainFontColor);
         margin-bottom: 10%;
       }
       p {
@@ -41,7 +37,7 @@
         display: inline-block;
         overflow: hidden;
         img {
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: $BoxShadow
         }
         a {
           display: block;
@@ -84,7 +80,7 @@
         border: 0;
         width: 202px;
         height: 57px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        box-shadow: $BoxShadow;
         background-color: #5585a2;
         &:hover {
           background-color: #3c6a85;
@@ -93,11 +89,7 @@
         .b-gallery__button-text {
           width: 114px;
           height: 15px;
-          color: #ffffff;
-          font-family: Raleway;
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 27px;
+          @include mainFontButton($altFontColor);
           text-transform: uppercase;
         }
       }
