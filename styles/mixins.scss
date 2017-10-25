@@ -17,7 +17,7 @@
     line-height: 25px;
 }
 
-@mixin mainFontMendium($colorValue) {
+@mixin mainFontMedium($colorValue) {
     color: $colorValue;
     font-family: $mainFont;
     font-size: 40px;

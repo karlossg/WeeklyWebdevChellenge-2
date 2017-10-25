@@ -54,8 +54,8 @@
       }
       .b-services__slogan-text {
         position: relative;
-        bottom: 17.500em;
-        left: 7.188em;
+        bottom: 50%;
+        left: 13%;
         .b-services__name-text {
           @include mainFontHuge($altFontColor);
         }

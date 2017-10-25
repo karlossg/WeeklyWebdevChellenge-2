@@ -4,11 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover contain;
   background-position: center;
-  
   .b-subscribe__wrapper {
-    
     max-width: 1200px;
-    
     padding: 8% 0;
     padding-left: 3%;
     .b-subscribe__text-wrapper {
@@ -23,10 +20,10 @@
     }
     .b-subscribe__form-wrapper {
       .b-subscribe__form-input {
-          width: 560px;
-          height: 55px;
-          opacity: 0.5;
-          @include mainFontMini($mainFontColor);
+        width: 560px;
+        height: 55px;
+        opacity: 0.5;
+        @include mainFontMini($mainFontColor);
       }
       .b-subscribe__form-button {
         margin-left: 25px;
@@ -37,10 +34,9 @@
         background-color: #96b92c;
         @include mainFontButton($altFontColor);
         &:hover {
-            background-color: #839646;
-            cursor: pointer;
+          background-color: #839646;
+          cursor: pointer;
         }
-
       }
     }
   }
