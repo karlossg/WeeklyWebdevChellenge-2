@@ -1,12 +1,10 @@
 .b-gallery {
   background-color: $galleryBackgroundColor;
   .b-gallery__wrapper {
-    padding: 5% 0;
-    padding-left: 3%;
-    width: 100%;
+    padding: 5% 0 5% 3%;
     max-width: 1200px;
     .b-gallery__text-wrapper {
-      width: 577px;
+      padding: 0 25%;
       text-align: center;
       h1 {
         @include mainFontHuge($mainFontColor);
@@ -59,9 +57,7 @@
         }
         &:hover a {
           opacity: 1;
-          /* added */
           top: 0;
-          /* added */
           z-index: 500;
           span {
             top: 50%;
@@ -87,10 +83,7 @@
           cursor: pointer;
         }
         .b-gallery__button-text {
-          width: 114px;
-          height: 15px;
           @include mainFontButton($altFontColor);
-          text-transform: uppercase;
         }
       }
     }

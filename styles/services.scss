@@ -5,17 +5,16 @@
     justify-content: space-around;
     padding: 5% 0;
     padding-left: 3%;
-    width: 96%;
     max-width: 1200px;
     .b-services__btn-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      max-height: 462px;
+      max-height: 28em;
       margin-top: 6%;
       .b-services__btn-text {
-        width: 422px;
-        height: 102px;
+        width: 26.375em;
+        height: 6.375em;
         background-color: #fff;
         box-shadow: $BoxShadow;
         display: flex;
@@ -51,16 +50,13 @@
       padding-left: 5%;
       .b-services__slogan-image {
         margin-left: 30%;
-        width: 462px;
-        height: 527px;
+        
       }
       .b-services__slogan-text {
         position: relative;
-        bottom: 280px;
-        left: 115px;
+        bottom: 17.500em;
+        left: 7.188em;
         .b-services__name-text {
-          width: 700px;
-          height: 67px;
           @include mainFontHuge($altFontColor);
         }
       }

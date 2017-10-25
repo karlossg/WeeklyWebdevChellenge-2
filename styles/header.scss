@@ -6,16 +6,12 @@
   background-size: cover contain;
   background-position: center;
   .b-header__wrapper {
-    width: 96%;
     max-width: 1200px;
-    margin: 0 auto;
     padding: 0 2%;
     display: flex;
   }
   .b-header__logo {
     margin: 10px 0 0 0;
-    width: 127px;
-    height: 52px;
     color: $mainFontColor;
     font-family: $logoFont;
     font-size: 50px;
@@ -25,7 +21,7 @@
 }
 
 .b-nav {
-  float: right;
+  margin-left: 30%;
   .b-nav__main-nav--hidden {
     display: none;
   }

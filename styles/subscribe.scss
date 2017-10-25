@@ -6,26 +6,18 @@
   background-position: center;
   
   .b-subscribe__wrapper {
-    width: 96%;
+    
     max-width: 1200px;
-    margin: 0 auto;
+    
     padding: 8% 0;
     padding-left: 3%;
     .b-subscribe__text-wrapper {
       h1 {
-        color: #262626;
-        font-family: Raleway;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 27px;
+        @include mainFontMedium($mainFontColor);
         margin-bottom: 2%;
       }
       p {
-        color: #262626;
-        font-family: Raleway;
-        font-size: 17px;
-        font-weight: 300;
-        line-height: 27px;
+        @include mainFontSmall($mainFontColor);
         margin-bottom: 2%;
       }
     }
@@ -34,11 +26,7 @@
           width: 560px;
           height: 55px;
           opacity: 0.5;
-          color: #262626;
-          font-family: Raleway;
-          font-size: 15px;
-          font-weight: 300;
-          line-height: 27px;
+          @include mainFontMini($mainFontColor);
       }
       .b-subscribe__form-button {
         margin-left: 25px;
