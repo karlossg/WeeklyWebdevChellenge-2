@@ -6,51 +6,51 @@
   margin: 0 auto;
   padding: 0; }
 
-.b-header {
+.header {
   padding: 50px 0 0 0;
   background-image: url("../files/heroBackground.png");
   background-color: #F9F8FB;
   background-repeat: no-repeat;
   background-size: cover contain;
   background-position: center; }
-  .b-header .b-header__wrapper {
+  .header .header__wrapper {
     max-width: 1200px;
     padding: 0 2%;
     display: flex; }
-  .b-header .b-header__logo {
+  .header .header__logo {
     margin: 10px 0 0 0;
     color: #262626;
-    font-family: Pacifico;
+    font-family: Pacifico, Helvetica, Arial, sans-serif;
     font-size: 50px;
     font-weight: 400;
     line-height: 25px; }
 
-.b-nav {
+.nav {
   margin-left: 30%; }
-  .b-nav .b-nav__main-nav--hidden {
+  .nav .nav__main-nav--hidden {
     display: none; }
-  .b-nav .b-nav__menu-elem {
+  .nav .nav__menu-elem {
     list-style-type: none;
     float: left;
     margin-left: 35px;
     margin-top: 10px; }
-    .b-nav .b-nav__menu-elem .b-nav__menu-link {
+    .nav .nav__menu-elem .nav__menu-link {
       text-decoration: none;
       text-transform: uppercase;
       height: 12px;
       color: #262626;
-      font-family: Raleway;
+      font-family: Raleway, Helvetica, Arial, sans-serif;
       font-size: 16px;
       font-weight: 700;
       line-height: 25px; }
-      .b-nav .b-nav__menu-elem .b-nav__menu-link.b-nav__menu-link--active {
+      .nav .nav__menu-elem .nav__menu-link.nav__menu-link--active {
         border-top: 5px solid #ff6033; }
-      .b-nav .b-nav__menu-elem .b-nav__menu-link:hover {
+      .nav .nav__menu-elem .nav__menu-link:hover {
         border-top: 5px solid #ff6033; }
 
-.b-hero {
+.hero {
   padding: 50px 0; }
-  .b-hero .b-hero__wrapper {
+  .hero .hero__wrapper {
     max-width: 1200px;
     padding: 0 2%;
     display: flex;
@@ -59,88 +59,90 @@
     justify-content: space-around;
     align-items: baseline;
     align-content: space-around; }
-    .b-hero .b-hero__wrapper .b-hero__slogan-wrapper {
+    .hero .hero__wrapper .hero__slogan-wrapper {
       width: 100%; }
-      .b-hero .b-hero__wrapper .b-hero__slogan-wrapper .b-hero__slogan {
+      .hero .hero__wrapper .hero__slogan-wrapper .hero__slogan {
         padding-top: 20%;
         color: #262626;
-        font-family: Raleway;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 60px;
         font-weight: 900;
         line-height: 25px; }
-      .b-hero .b-hero__wrapper .b-hero__slogan-wrapper .b-hero__text {
+      .hero .hero__wrapper .hero__slogan-wrapper .hero__text {
         color: #262626;
-        font-family: Raleway;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 17px;
         font-weight: 300;
         line-height: 27px;
         padding-top: 4%;
         text-align: justify; }
-      .b-hero .b-hero__wrapper .b-hero__slogan-wrapper .b-hero__button {
+      .hero .hero__wrapper .hero__slogan-wrapper .hero__button {
         margin-top: 30px;
         border: 0;
         width: 202px;
         height: 57px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        background-color: #ff6033; }
-        .b-hero .b-hero__wrapper .b-hero__slogan-wrapper .b-hero__button:hover {
+        background-color: #ff6033;
+        color: #fff;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 27px;
+        text-transform: uppercase; }
+        .hero .hero__wrapper .hero__slogan-wrapper .hero__button:hover {
           background-color: #ad5036;
           cursor: pointer; }
-        .b-hero .b-hero__wrapper .b-hero__slogan-wrapper .b-hero__button .b-hero__button-text {
-          color: #fff;
-          font-family: Raleway;
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 27px;
-          text-transform: uppercase; }
-    .b-hero .b-hero__wrapper .b-hero__scroll-button {
+    .hero .hero__wrapper .hero__scroll-button {
       width: 60%;
       align-self: center;
       text-align: center;
       padding: 15% 0 .1% 0; }
 
-.b-about {
+.about {
   background-color: #00c4c4; }
-  .b-about .b-about__wrapper {
-    max-width: 1500px;
+  .about .about__wrapper {
+    padding: 5% 0 5% 3%;
+    max-width: 1200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; }
-    .b-about .b-about__wrapper .b-about__text-wrapper {
+    .about .about__wrapper .about__text-wrapper {
       width: 70%;
       padding-top: 15%;
       padding-bottom: 15%;
       max-width: 31em; }
-      .b-about .b-about__wrapper .b-about__text-wrapper .b-about__title {
+      .about .about__wrapper .about__text-wrapper .about__title {
         color: #fff;
-        font-family: Raleway;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 90px;
         font-weight: 700;
         line-height: 27px;
         margin-bottom: 10%; }
-      .b-about .b-about__wrapper .b-about__text-wrapper .b-about__text {
+      .about .about__wrapper .about__text-wrapper .about__text {
         color: #fff;
-        font-family: Raleway;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 17px;
         font-weight: 300;
         line-height: 27px; }
-        .b-about .b-about__wrapper .b-about__text-wrapper .b-about__text span {
+        .about .about__wrapper .about__text-wrapper .about__text span {
           display: block; }
 
-.b-services {
+.services {
   background-color: #70bfff; }
-  .b-services .b-services__wrapper {
-    display: flex;
-    justify-content: space-around;
+  .services .services__wrapper {
     padding: 5% 0 5% 3%;
-    max-width: 1200px; }
-    .b-services .b-services__wrapper .b-services__btn-wrapper {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .services .services__wrapper .services__btn-wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       max-height: 28em;
       margin-top: 6%; }
-      .b-services .b-services__wrapper .b-services__btn-wrapper .b-services__btn-text {
+      .services .services__wrapper .services__btn-wrapper .services__btn-text {
         width: 26.375em;
         height: 6.375em;
         background-color: #fff;
@@ -149,80 +151,82 @@
         align-content: space-around;
         justify-content: center;
         align-items: center; }
-        .b-services .b-services__wrapper .b-services__btn-wrapper .b-services__btn-text h2 {
+        .services .services__wrapper .services__btn-wrapper .services__btn-text h2 {
           text-align: center;
           width: 70%;
           color: #262626;
-          font-family: Raleway;
+          font-family: Raleway, Helvetica, Arial, sans-serif;
           font-size: 20px;
           font-weight: 700;
           line-height: 27px; }
-        .b-services .b-services__wrapper .b-services__btn-wrapper .b-services__btn-text:hover {
+        .services .services__wrapper .services__btn-wrapper .services__btn-text:hover {
           background-color: #e0bfbf;
           cursor: pointer; }
-      .b-services .b-services__wrapper .b-services__btn-wrapper .b-services__btn-image {
+      .services .services__wrapper .services__btn-wrapper .services__btn-image {
         text-align: center;
         float: right;
         border-left: solid 2px #9d9d9d;
         width: 30%;
         height: 100%; }
-        .b-services .b-services__wrapper .b-services__btn-wrapper .b-services__btn-image img {
+        .services .services__wrapper .services__btn-wrapper .services__btn-image img {
           padding: 20% 0; }
-    .b-services .b-services__wrapper .b-services__slogan-wrapper {
+    .services .services__wrapper .services__slogan-wrapper {
       padding-left: 5%; }
-      .b-services .b-services__wrapper .b-services__slogan-wrapper .b-services__slogan-image {
+      .services .services__wrapper .services__slogan-wrapper .services__slogan-image {
         padding-left: 2%; }
-      .b-services .b-services__wrapper .b-services__slogan-wrapper .b-services__slogan-text {
+      .services .services__wrapper .services__slogan-wrapper .services__slogan-text {
         position: relative;
         bottom: 50%;
         left: -15%; }
-        .b-services .b-services__wrapper .b-services__slogan-wrapper .b-services__slogan-text .b-services__name-text {
+        .services .services__wrapper .services__slogan-wrapper .services__slogan-text .services__name-text {
           color: #fff;
-          font-family: Raleway;
+          font-family: Raleway, Helvetica, Arial, sans-serif;
           font-size: 90px;
           font-weight: 700;
           line-height: 27px; }
 
-.b-gallery {
+.gallery {
   background-color: #ffe92f; }
-  .b-gallery .b-gallery__wrapper {
+  .gallery .gallery__wrapper {
     padding: 5% 0 5% 3%;
     max-width: 1200px; }
-    .b-gallery .b-gallery__wrapper .b-gallery__text-wrapper {
+    .gallery .gallery__wrapper .gallery__text-wrapper {
       padding: 0 25%;
       text-align: center; }
-      .b-gallery .b-gallery__wrapper .b-gallery__text-wrapper h1 {
+      .gallery .gallery__wrapper .gallery__text-wrapper h1 {
         color: #262626;
-        font-family: Raleway;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 90px;
         font-weight: 700;
         line-height: 27px;
         margin-bottom: 10%; }
-      .b-gallery .b-gallery__wrapper .b-gallery__text-wrapper p {
+      .gallery .gallery__wrapper .gallery__text-wrapper p {
         color: #262626;
-        font-family: Raleway;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 17px;
         font-weight: 300;
         line-height: 27px;
         margin-bottom: 10%; }
-    .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__images-top {
+    .gallery .gallery__wrapper .gallery__images-wrapper .gallery__images-top {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between; }
-      .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__images-top .b-gallery__images-small {
+      .gallery .gallery__wrapper .gallery__images-wrapper .gallery__images-top .gallery__images-small {
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
-    .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__images-bottom {
+    .gallery .gallery__wrapper .gallery__images-wrapper .gallery__images-bottom {
       margin-top: 2%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-around; }
-    .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__image {
+    .gallery .gallery__wrapper .gallery__images-wrapper .gallery__image {
       position: relative;
       display: inline-block;
       overflow: hidden; }
-      .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__image img {
+      .gallery .gallery__wrapper .gallery__images-wrapper .gallery__image img {
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); }
-      .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__image a {
+      .gallery .gallery__wrapper .gallery__images-wrapper .gallery__image a {
         display: block;
         position: absolute;
         top: -100%;
@@ -232,88 +236,86 @@
         right: 0;
         text-align: center;
         color: inherit; }
-        .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__image a .fa-search-plus {
+        .gallery .gallery__wrapper .gallery__images-wrapper .gallery__image a .fa-search-plus {
           color: #262626; }
-      .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__image:hover img {
+      .gallery .gallery__wrapper .gallery__images-wrapper .gallery__image:hover img {
         opacity: 0.8;
         cursor: pointer; }
-      .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__image:hover a {
+      .gallery .gallery__wrapper .gallery__images-wrapper .gallery__image:hover a {
         opacity: 1;
         top: 0;
         z-index: 500; }
-        .b-gallery .b-gallery__wrapper .b-gallery__images-wrapper .b-gallery__image:hover a span {
+        .gallery .gallery__wrapper .gallery__images-wrapper .gallery__image:hover a span {
           top: 50%;
           position: absolute;
           left: 0;
           right: 0;
           transform: translateY(-50%); }
-    .b-gallery .b-gallery__wrapper .b-gallery__button-wrapper {
+    .gallery .gallery__wrapper .gallery__button-wrapper {
       margin-top: 3%;
       text-align: center; }
-      .b-gallery .b-gallery__wrapper .b-gallery__button-wrapper .b-gallery__button {
+      .gallery .gallery__wrapper .gallery__button-wrapper .gallery__button {
         border: 0;
         width: 202px;
         height: 57px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        background-color: #5585a2; }
-        .b-gallery .b-gallery__wrapper .b-gallery__button-wrapper .b-gallery__button:hover {
+        background-color: #5585a2;
+        color: #fff;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 27px;
+        text-transform: uppercase; }
+        .gallery .gallery__wrapper .gallery__button-wrapper .gallery__button:hover {
           background-color: #3c6a85;
           cursor: pointer; }
-        .b-gallery .b-gallery__wrapper .b-gallery__button-wrapper .b-gallery__button .b-gallery__button-text {
-          color: #fff;
-          font-family: Raleway;
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 27px;
-          text-transform: uppercase; }
 
-.b-subscribe {
+.subscribe {
   background-image: url("../files/subscripeImage.png");
   background-color: #F9F8FB;
   background-repeat: no-repeat;
   background-size: cover contain;
   background-position: center; }
-  .b-subscribe .b-subscribe__wrapper {
+  .subscribe .subscribe__wrapper {
     max-width: 1200px;
     padding: 8% 0;
     padding-left: 3%; }
-    .b-subscribe .b-subscribe__wrapper .b-subscribe__text-wrapper h1 {
+    .subscribe .subscribe__wrapper .subscribe__text-wrapper h1 {
       color: #262626;
-      font-family: Raleway;
+      font-family: Raleway, Helvetica, Arial, sans-serif;
       font-size: 40px;
       font-weight: 700;
       line-height: 27px;
       margin-bottom: 2%; }
-    .b-subscribe .b-subscribe__wrapper .b-subscribe__text-wrapper p {
+    .subscribe .subscribe__wrapper .subscribe__text-wrapper p {
       color: #262626;
-      font-family: Raleway;
+      font-family: Raleway, Helvetica, Arial, sans-serif;
       font-size: 17px;
       font-weight: 300;
       line-height: 27px;
       margin-bottom: 2%; }
-    .b-subscribe .b-subscribe__wrapper .b-subscribe__form-wrapper .b-subscribe__form-input {
+    .subscribe .subscribe__wrapper .subscribe__form-wrapper .subscribe__form-input {
       width: 560px;
       height: 55px;
       opacity: 0.5;
       color: #262626;
-      font-family: Raleway;
+      font-family: Raleway, Helvetica, Arial, sans-serif;
       font-size: 15px;
       font-weight: 300;
       line-height: 27px; }
-    .b-subscribe .b-subscribe__wrapper .b-subscribe__form-wrapper .b-subscribe__form-button {
-      margin-left: 25px;
+    .subscribe .subscribe__wrapper .subscribe__form-wrapper .subscribe__form-button {
       border: 0;
-      width: 172px;
+      width: 202px;
       height: 57px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
       background-color: #96b92c;
       color: #fff;
-      font-family: Raleway;
+      font-family: Raleway, Helvetica, Arial, sans-serif;
       font-size: 20px;
       font-weight: 300;
       line-height: 27px;
       text-transform: uppercase; }
-      .b-subscribe .b-subscribe__wrapper .b-subscribe__form-wrapper .b-subscribe__form-button:hover {
+      .subscribe .subscribe__wrapper .subscribe__form-wrapper .subscribe__form-button:hover {
         background-color: #839646;
         cursor: pointer; }
 
@@ -327,20 +329,21 @@
       text-align: center; }
       .blog .blog-wrapper .blog__text-wrapper h1 {
         color: #fff;
-        font-family: Raleway;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 90px;
         font-weight: 700;
         line-height: 27px;
         margin-bottom: 10%; }
       .blog .blog-wrapper .blog__text-wrapper p {
         color: #fff;
-        font-family: Raleway;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 17px;
         font-weight: 300;
         line-height: 27px;
         margin-bottom: 10%; }
     .blog .blog-wrapper .blog__gallery-wrapper {
       display: flex;
+      flex-wrap: wrap;
       text-shadow: 1px 0.5px 2px #000000; }
       .blog .blog-wrapper .blog__gallery-wrapper .blog__gallery-img {
         position: relative;
@@ -368,9 +371,9 @@
         color: #ffffff; }
         .blog .blog-wrapper .blog__gallery-wrapper .blog__date h1 {
           margin-top: 10%;
-          font-family: "Raleway - Heavy";
+          font-family: Raleway;
           font-size: 21px;
-          font-weight: 400;
+          font-weight: 900;
           line-height: 25px;
           text-transform: uppercase; }
       .blog .blog-wrapper .blog__gallery-wrapper h2 {
@@ -401,16 +404,15 @@
         width: 202px;
         height: 57px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        background-color: #f72b3b; }
+        background-color: #f72b3b;
+        color: #fff;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 27px;
+        text-transform: uppercase; }
         .blog .blog-wrapper .blog__button-wrapper .blog__button:hover {
-          background-color: #b41523;
+          background-color: #a52532;
           cursor: pointer; }
-        .blog .blog-wrapper .blog__button-wrapper .blog__button .blog__button-text {
-          color: #fff;
-          font-family: Raleway;
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 27px;
-          text-transform: uppercase; }
 
 /*# sourceMappingURL=index.css.map */

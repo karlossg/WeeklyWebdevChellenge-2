@@ -1,16 +1,16 @@
-.b-header {
+.header {
   padding: 50px 0 0 0;
   background-image: url("../files/heroBackground.png");
   background-color: $headerBackground;
   background-repeat: no-repeat;
   background-size: cover contain;
   background-position: center;
-  .b-header__wrapper {
+  .header__wrapper {
     max-width: 1200px;
     padding: 0 2%;
     display: flex;
   }
-  .b-header__logo {
+  .header__logo {
     margin: 10px 0 0 0;
     color: $mainFontColor;
     font-family: $logoFont;
@@ -20,17 +20,17 @@
   }
 }
 
-.b-nav {
+.nav {
   margin-left: 30%;
-  .b-nav__main-nav--hidden {
+  .nav__main-nav--hidden {
     display: none;
   }
-  .b-nav__menu-elem {
+  .nav__menu-elem {
     list-style-type: none;
     float: left;
     margin-left: 35px;
     margin-top: 10px;
-    .b-nav__menu-link {
+    .nav__menu-link {
       text-decoration: none;
       text-transform: uppercase;
       height: 12px;
@@ -39,7 +39,7 @@
       font-size: 16px;
       font-weight: 700;
       line-height: 25px;
-      &.b-nav__menu-link--active {
+      &.nav__menu-link--active {
         border-top: 5px solid $activeMenuColor;
       }
       &:hover {

@@ -1,5 +1,11 @@
 @import "variables.scss";
 
+// main
+@mixin wrappersSize {
+padding: 5% 0 5% 3%;
+max-width: 1200px;
+}
+
 // fonts
 @mixin mainFontHuge($colorValue) {
     color: $colorValue;
@@ -48,4 +54,18 @@
     font-weight: 300;
     line-height: 27px;
     text-transform: uppercase;
+}
+
+// button
+@mixin mainButton($colorValue, $colorValueHover) {
+    border: 0;
+    width: 202px;
+    height: 57px;
+    box-shadow: $BoxShadow;
+    background-color: $colorValue;
+    @include mainFontButton($altFontColor);
+    &:hover {
+      background-color: $colorValueHover;
+      cursor: pointer;
+    }
 }

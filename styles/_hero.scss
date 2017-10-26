@@ -1,6 +1,6 @@
-.b-hero {
+.hero {
   padding: 50px 0;
-  .b-hero__wrapper {
+  .hero__wrapper {
     max-width: 1200px;
     padding: 0 2%;
     display: flex;
@@ -9,34 +9,23 @@
     justify-content: space-around;
     align-items: baseline;
     align-content: space-around;
-    .b-hero__slogan-wrapper {
+    .hero__slogan-wrapper {
       width: 100%;
-      .b-hero__slogan {
+      .hero__slogan {
         padding-top: 20%;
         @include mainFontBig($mainFontColor);
       }
-      .b-hero__text {
+      .hero__text {
         @include mainFontSmall($mainFontColor);
         padding-top: 4%;
         text-align: justify;
       }
-      .b-hero__button {
+      .hero__button {
         margin-top: 30px;
-        border: 0;
-        width: 202px;
-        height: 57px;
-        box-shadow: $BoxShadow;
-        background-color: $heroButtonBackgroundColor;
-        &:hover {
-          background-color: $heroButtonOnHoverBackgroundColor;
-          cursor: pointer;
-        }
-        .b-hero__button-text {
-          @include mainFontButton($altFontColor);
-        }
+        @include mainButton($heroButtonColor, $heroButtonOnHoverColor);
       }
     }
-    .b-hero__scroll-button {
+    .hero__scroll-button {
       width: 60%;
       align-self: center;
       text-align: center;

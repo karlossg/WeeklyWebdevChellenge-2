@@ -1,20 +1,21 @@
-.b-about {
+.about {
   background-color: $aboutBackgroundColor;
-  .b-about__wrapper {
-    max-width: 1500px;
+  .about__wrapper {
+    @include wrappersSize;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    .b-about__text-wrapper {
+    .about__text-wrapper {
       width: 70%;
       padding-top: 15%;
       padding-bottom: 15%;
       max-width: 31em;
-      .b-about__title {
+      .about__title {
         @include mainFontHuge($altFontColor);
         margin-bottom: 10%;
       }
-      .b-about__text {
+      .about__text {
         @include mainFontSmall($altFontColor);
         span {
           display: block;

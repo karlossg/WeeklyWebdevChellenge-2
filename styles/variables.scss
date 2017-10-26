@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
 
-$logoFont: Pacifico;
-$mainFont: Raleway;
+$logoFont: Pacifico, Helvetica, Arial, sans-serif;
+$mainFont: Raleway, Helvetica, Arial, sans-serif;
 $mainFontColor: #262626;
 $altFontColor: #fff;
 
@@ -15,6 +15,17 @@ $heroButtonBackgroundColor: #ff6033;
 $heroButtonOnHoverBackgroundColor: #ad5036;
 $galleryBackgroundColor: #ffe92f;
 $blogBackgroundColor: #b07cf7;
+
+// button colors 
+$heroButtonColor: #ff6033;
+$heroButtonOnHoverColor: #ad5036;
+$galleryButtonColor: #5585a2;
+$galerryButtonOnHoverColor: #3c6a85;
+$subscribeButtonColor: #96b92c;
+$subscribeButtonOnHoverColor: #839646;
+$blogButtonColor: #f72b3b;
+$blogButtonOnHoverColor: #a52532;;
+
 
 // others
 $activeMenuColor: #ff6033;

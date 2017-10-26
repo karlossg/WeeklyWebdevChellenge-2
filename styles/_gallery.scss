@@ -1,9 +1,8 @@
-.b-gallery {
+.gallery {
   background-color: $galleryBackgroundColor;
-  .b-gallery__wrapper {
-    padding: 5% 0 5% 3%;
-    max-width: 1200px;
-    .b-gallery__text-wrapper {
+  .gallery__wrapper {
+    @include wrappersSize;
+    .gallery__text-wrapper {
       padding: 0 25%;
       text-align: center;
       h1 {
@@ -15,22 +14,24 @@
         margin-bottom: 10%;
       }
     }
-    .b-gallery__images-wrapper {
-      .b-gallery__images-top {
+    .gallery__images-wrapper {
+      .gallery__images-top {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        .b-gallery__images-small {
+        .gallery__images-small {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
         }
       }
-      .b-gallery__images-bottom {
+      .gallery__images-bottom {
         margin-top: 2%;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
       }
-      .b-gallery__image {
+      .gallery__image {
         position: relative;
         display: inline-block;
         overflow: hidden;
@@ -69,23 +70,12 @@
         }
       }
     }
-    .b-gallery__button-wrapper {
+    .gallery__button-wrapper {
       margin-top: 3%;
       text-align: center;
-      .b-gallery__button {
-        border: 0;
-        width: 202px;
-        height: 57px;
-        box-shadow: $BoxShadow;
-        background-color: #5585a2;
-        &:hover {
-          background-color: #3c6a85;
-          cursor: pointer;
-        }
-        .b-gallery__button-text {
-          @include mainFontButton($altFontColor);
-        }
-      }
+      .gallery__button {
+        @include mainButton($galleryButtonColor, $galerryButtonOnHoverColor);
     }
   }
+}
 }
