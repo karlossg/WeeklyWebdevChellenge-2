@@ -814,7 +814,7 @@ template {
     padding: 5% 0 5% 3%;
     max-width: 1200px; }
     .contact .contact-wrapper .contact__text-wrapper {
-      padding: 0 25%;
+      padding: 0 35%;
       text-align: center; }
       .contact .contact-wrapper .contact__text-wrapper h1 {
         color: #262626;
@@ -834,7 +834,8 @@ template {
       display: flex;
       justify-content: space-between; }
       .contact .contact-wrapper .contact__form-wrapper .contact__form {
-        margin: 0; }
+        margin: 0;
+        width: 42%; }
         .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list {
           list-style-type: none; }
           .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list li {
@@ -843,7 +844,7 @@ template {
             align-items: center;
             margin: 3%; }
           .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list input {
-            width: 502px;
+            width: 100%;
             height: 52px;
             border: 0;
             background-color: #00c4c4;
@@ -869,9 +870,10 @@ template {
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list input:focus {
               opacity: 1;
-              border-left: 7px solid #355b82; }
+              border-left: 7px solid #355b82;
+              font-weight: 700; }
           .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea {
-            width: 502px;
+            width: 100%;
             height: 252px;
             background-color: #00c4c4;
             opacity: 0.5;
@@ -897,7 +899,8 @@ template {
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea:focus {
               opacity: 1;
-              border-left: 7px solid #355b82; }
+              border-left: 7px solid #355b82;
+              font-weight: 700; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea::selection {
               padding-left: 15px; }
         .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-button {
@@ -917,5 +920,17 @@ template {
           .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-button:hover {
             background-color: #0d9b9b;
             cursor: pointer; }
+      .contact .contact-wrapper .contact__form-wrapper .contact__adress {
+        padding: 1%;
+        color: #262626;
+        font-family: Raleway;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 25px; }
+        .contact .contact-wrapper .contact__form-wrapper .contact__adress h3 {
+          font-size: 17px;
+          font-weight: 700; }
+        .contact .contact-wrapper .contact__form-wrapper .contact__adress p {
+          padding-bottom: 4%; }
 
 /*# sourceMappingURL=index.css.map */
