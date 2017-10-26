@@ -1,0 +1,80 @@
+.contact {
+    background-image: url("../files/contactBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .contact-wrapper {
+      @include wrappersSize;
+      .contact__text-wrapper {
+        padding: 0 25%;
+        text-align: center;
+        h1 {
+          @include mainFontHuge($mainFontColor);
+          margin-bottom: 10%;
+        }
+        p {
+          @include mainFontSmall($mainFontColor);
+          margin-bottom: 10%;
+        }
+      }
+      .contact__form-wrapper {
+        
+        display: flex;
+        justify-content: space-between;
+        .contact__form {
+            margin: 0;
+        
+        .contact__form-list {
+            list-style-type: none;
+            
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                margin: 3%;
+                
+            }
+            input {
+                width: 502px;
+                height: 52px;
+                border: 0;
+                background-color: #00c4c4;
+                opacity: 0.5;
+                padding-left: 16px;
+                box-shadow: $BoxShadow;
+                color: white;
+                @include placeholder(white, 15px);
+                &:focus {
+                    opacity: 1;
+                    border-left: 7px solid #355b82; 
+                }
+            }
+            textarea {
+                width: 502px;
+                height: 252px;
+                background-color: #00c4c4;
+                opacity: 0.5;
+                box-shadow: $BoxShadow;
+                resize: none;
+                padding: 16px 0 0 16px;
+                color: white;
+                @include placeholder(white, 15px);
+                &:focus {
+                    opacity: 1;
+                    border-left: 7px solid #355b82; 
+                }
+                &::selection {
+                    padding-left: 15px;
+                }
+                
+            }
+        }
+        .contact__form-button {
+            @include mainButton(#00c4c4,#0d9b9b);
+            opacity: 0.5;
+            margin: 3% 0 0 57%;
+        }
+      }
+    }
+    }
+}

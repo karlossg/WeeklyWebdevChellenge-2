@@ -69,3 +69,47 @@ max-width: 1200px;
       cursor: pointer;
     }
 }
+
+// input
+@mixin placeholder($color, $size:"", $padding:"") {
+    &::-webkit-input-placeholder {
+      color: $color;
+      padding: $padding;
+      @if $size != "" {
+        font-size: $size;
+      }
+      @if $padding != "" {
+        padding: $padding;
+      }
+    }
+    &:-moz-placeholder {
+      color: $color;
+      padding: $padding;
+      @if $size != "" {
+        font-size: $size;
+      }
+      @if $padding != "" {
+        padding: $padding;
+      }
+    }
+    &::-moz-placeholder {
+      color: $color;
+      padding: $padding;
+      @if $size != "" {
+        font-size: $size;
+      }
+      @if $padding != "" {
+        padding: $padding;
+      }
+    }
+    &:-ms-input-placeholder {
+      color: $color;
+      padding: $padding;
+      @if $size != "" {
+        font-size: $size;
+      }
+      @if $padding != "" {
+        padding: $padding;
+      } 
+    }
+  }
