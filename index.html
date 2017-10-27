@@ -11,8 +11,8 @@
 
 <body>
   <!-- header -->
-  <header class="header" id="header">
-    <div class="header__wrapper">
+  <header class="header">
+    <div class="header__wrapper" id="header">
       <h1 class="header__logo">Cashee</h1>
 
       <!-- navigation -->
@@ -20,11 +20,11 @@
         <h2 class="nav__main-nav--hidden">Main Navigation</h2>
         <div class="nav__burger"></div>
         <ul>
-          <li class="nav__menu-elem">
-            <a href="#header" class="nav__menu-link nav__menu-link--active">Home</a>
+          <li  class="nav__menu-elem" class="nav__menu-link">
+            <a id="homeBtn" class="nav__menu-link">Home</a>
           </li>
-          <li class="nav__menu-elem">
-            <a href="#about" class="nav__menu-link">About</a>
+          <li id="aboutBtn"  class="nav__menu-elem">
+            <a href="#" class="nav__menu-link">About</a>
           </li>
           <li class="nav__menu-elem">
             <a href="#services" class="nav__menu-link">Services</a>
@@ -65,7 +65,7 @@
 
   <!-- about us -->
   <section class="about" id="about">
-    <div class="about__wrapper" id="about">
+    <div class="about__wrapper">
       <div class="about__image">
         <img src="files/aboutUsImage.png" alt="">
       </div>
@@ -262,9 +262,12 @@
       <p class="footer__author">Made with <span>love</span> by Auskteez</p>
     </footer>
   </section>
-
+  <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/plugins/ScrollToPlugin.min.js"></script> -->
+  <script scr="/src/scripts.js"></script>
   
-
+  
+  
 </body>
 
 </html>
