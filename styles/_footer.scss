@@ -5,24 +5,22 @@
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    
     p {
-        margin: 0 2%;
-    }  
-      
-    }
-    .footer__rights {
-        @include font(#b9b9b9, $mainFont, 16px ,300,25px);
-     
+      margin: 0 2%;
     }
   }
+  .footer__rights {
+    @include font(#b9b9b9, $mainFont, 16px, 300, 25px);
+  }
   .footer__author {
-    @include font(#b9b9b9, $mainFont, 15px ,300,25px);
+    @include font(#b9b9b9, $mainFont, 15px, 300, 25px);
     span {
       color: #ff2b58;
       font-weight: 700;
     }
   }
-  .footer__logo {
-    @include font(#b9b9b9, $logoFont, 25px ,300,25px);
+    .footer__logo {
+    @include font(#b9b9b9, $logoFont, 25px, 300, 25px);
   }
+}
+
