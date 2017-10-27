@@ -12,25 +12,18 @@ $('a[href^="#"]').on('click', function (event) {
 
 // menu hiding on scroll
 var prev = 0;
-var $window = $(window);
 var nav = $('.header__wrapper');
 
-$window.on('scroll', function(){
+$(window).on('scroll', function(){
   var scrollTop = $window.scrollTop();
   nav.toggleClass('hidden', scrollTop > prev);
   prev = scrollTop;
+  var scrollDistance = $window.scrollTop();
+  $('section').each(function(i) {
+    if ($(this).position().top <= scrollDistance) {
+            $('ul li a').removeClass('nav__menu-link--active');
+            $('li a').eq(i).addClass('nav__menu-link--active');
+    }
 });
 
-// active menu tab
-
-$window.scroll(function() {
-    var scrollDistance = $window.scrollTop();
-
-    $('section').each(function(i) {
-        if ($(this).position().top <= scrollDistance) {
-                $('ul li a').removeClass('nav__menu-link--active');
-                $('li a').eq(i).addClass('nav__menu-link--active');
-        }
-    });
-}).scroll();
-
+});
