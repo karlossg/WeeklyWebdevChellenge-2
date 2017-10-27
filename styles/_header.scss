@@ -6,22 +6,26 @@
   background-size: cover contain;
   background-position: center;
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
   .header__wrapper {
     max-width: 1200px;
     display: flex;
     position: fixed;
     width: 70%;
-    height: 15%;
     padding-left: 150px;
     z-index: 1000;
     text-shadow: 0.5px 0.5px 5px #F9F8FB;
   }
   .header__logo {
     margin-top: 10px;
-    @include font($mainFontColor, $logoFont, 50px, 400, 25px);
+    @include font($mainFontColor,
+    $logoFont,
+    50px,
+    400,
+    25px);
   }
 }
+
 .nav {
   margin-left: 20%;
   .nav__main-nav--hidden {
@@ -43,9 +47,11 @@
       line-height: 25px;
       &.nav__menu-link--active {
         border-top: 5px solid $activeMenuColor;
+        box-shadow: 0px -1px 1px #F9F8FB;
       }
       &:hover {
         border-top: 5px solid $activeMenuColor;
+        box-shadow: 0px -1px 1px #F9F8FB;
       }
     }
   }

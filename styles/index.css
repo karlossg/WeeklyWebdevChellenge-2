@@ -405,13 +405,12 @@ template {
   background-size: cover contain;
   background-position: center;
   position: relative;
-  width: 1200px; }
+  max-width: 1200px; }
   .header .header__wrapper {
     max-width: 1200px;
     display: flex;
     position: fixed;
     width: 70%;
-    height: 15%;
     padding-left: 150px;
     z-index: 1000;
     text-shadow: 0.5px 0.5px 5px #F9F8FB; }
@@ -442,9 +441,11 @@ template {
       font-weight: 700;
       line-height: 25px; }
       .nav .nav__menu-elem .nav__menu-link.nav__menu-link--active {
-        border-top: 5px solid #ff6033; }
+        border-top: 5px solid #ff6033;
+        box-shadow: 0px -1px 1px #F9F8FB; }
       .nav .nav__menu-elem .nav__menu-link:hover {
-        border-top: 5px solid #ff6033; }
+        border-top: 5px solid #ff6033;
+        box-shadow: 0px -1px 1px #F9F8FB; }
 
 .hero {
   padding: 5% 10%; }
