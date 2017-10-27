@@ -83,6 +83,7 @@ max-width: 1200px;
     &::-webkit-input-placeholder {
       color: $color;
       padding: $padding;
+      font-family: $mainFont;
       @if $size != "" {
         font-size: $size;
       }
@@ -93,6 +94,7 @@ max-width: 1200px;
     &:-moz-placeholder {
       color: $color;
       padding: $padding;
+      font-family: $mainFont;
       @if $size != "" {
         font-size: $size;
       }
@@ -103,6 +105,7 @@ max-width: 1200px;
     &::-moz-placeholder {
       color: $color;
       padding: $padding;
+      font-family: $mainFont;
       @if $size != "" {
         font-size: $size;
       }
@@ -113,6 +116,7 @@ max-width: 1200px;
     &:-ms-input-placeholder {
       color: $color;
       padding: $padding;
+      font-family: $mainFont;
       @if $size != "" {
         font-size: $size;
       }

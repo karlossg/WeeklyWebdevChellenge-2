@@ -55,10 +55,10 @@
             resize: none;
             padding: 16px 0 0 16px;
             color: white;
-            @include placeholder(white,
-            15px);
+            @include placeholder(white, 15px);
             &:focus {
               opacity: 1;
+              outline: none;
               border-left: 7px solid #355b82;
               font-weight: 700;
             }

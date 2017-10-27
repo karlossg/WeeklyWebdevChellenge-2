@@ -474,18 +474,22 @@ body {
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list input::-webkit-input-placeholder {
               color: white;
               padding: "";
+              font-family: Raleway, Helvetica, Arial, sans-serif;
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list input:-moz-placeholder {
               color: white;
               padding: "";
+              font-family: Raleway, Helvetica, Arial, sans-serif;
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list input::-moz-placeholder {
               color: white;
               padding: "";
+              font-family: Raleway, Helvetica, Arial, sans-serif;
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list input:-ms-input-placeholder {
               color: white;
               padding: "";
+              font-family: Raleway, Helvetica, Arial, sans-serif;
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list input:focus {
               opacity: 1;
@@ -504,21 +508,26 @@ body {
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea::-webkit-input-placeholder {
               color: white;
               padding: "";
+              font-family: Raleway, Helvetica, Arial, sans-serif;
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea:-moz-placeholder {
               color: white;
               padding: "";
+              font-family: Raleway, Helvetica, Arial, sans-serif;
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea::-moz-placeholder {
               color: white;
               padding: "";
+              font-family: Raleway, Helvetica, Arial, sans-serif;
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea:-ms-input-placeholder {
               color: white;
               padding: "";
+              font-family: Raleway, Helvetica, Arial, sans-serif;
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea:focus {
               opacity: 1;
+              outline: none;
               border-left: 7px solid #355b82;
               font-weight: 700; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea::selection {
