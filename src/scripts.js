@@ -15,6 +15,7 @@ var prev = 0;
 var $window = $(window);
 var nav = $('.header__wrapper');
 
+// active menu
 $window.on('scroll', function(){
   var scrollTop = $window.scrollTop();
   nav.toggleClass('hidden', scrollTop > prev);
