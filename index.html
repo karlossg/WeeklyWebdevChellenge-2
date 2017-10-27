@@ -11,7 +11,7 @@
 
 <body>
   <!-- header -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__wrapper">
       <h1 class="header__logo">Cashee</h1>
 
@@ -21,26 +21,27 @@
         <div class="nav__burger"></div>
         <ul>
           <li class="nav__menu-elem">
-            <a href="#" class="nav__menu-link nav__menu-link--active">Home</a>
+            <a href="#header" class="nav__menu-link nav__menu-link--active">Home</a>
           </li>
           <li class="nav__menu-elem">
-            <a href="#" class="nav__menu-link">About</a>
+            <a href="#about" class="nav__menu-link">About</a>
           </li>
           <li class="nav__menu-elem">
-            <a href="#" class="nav__menu-link">Services</a>
+            <a href="#services" class="nav__menu-link">Services</a>
           </li>
           <li class="nav__menu-elem">
-            <a href="#" class="nav__menu-link">Gallery</a>
+            <a href="#gallery" class="nav__menu-link">Gallery</a>
           </li>
           <li class="nav__menu-elem">
-            <a href="#" class="nav__menu-link">Blog</a>
+            <a href="#blog" class="nav__menu-link">Blog</a>
           </li>
           <li class="nav__menu-elem">
-            <a href="#" class="nav__menu-link">Contact</a>
+            <a href="#contact" class="nav__menu-link">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
+
     <!-- hero -->
     <section class="hero">
       <div class="hero__wrapper">
@@ -63,7 +64,7 @@
   </header>
 
   <!-- about us -->
-  <section class="about">
+  <section class="about" id="about">
     <div class="about__wrapper" id="about">
       <div class="about__image">
         <img src="files/aboutUsImage.png" alt="">
@@ -80,7 +81,7 @@
   </section>
 
   <!-- services -->
-  <section class="services">
+  <section class="services" id="services">
     <div class="services__wrapper">
       <div class="services__btn-wrapper">
         <div class="services__btn-text">
@@ -120,7 +121,7 @@
   </section>
 
   <!-- gallery -->
-  <section class="gallery">
+  <section class="gallery" id="gallery">
     <div class="gallery__wrapper">
       <div class="gallery__text-wrapper">
         <div class="gallery__text">
@@ -166,7 +167,7 @@
   </section>
 
   <!-- blog -->
-  <section class="blog">
+  <section class="blog" id="blog">
     <div class="blog-wrapper">
       <div class="blog__text-wrapper">
         <div class="blog__text">
@@ -175,7 +176,7 @@
         </div>
       </div>
       <div class="blog__gallery-wrapper">
-        <div class="blog__gallery-img">
+        <div class="blog__gallery-img" draggable="true">
           <img src="files/blogImage1.png" alt="">
           <div class="blog__img-text">
             <div class="blog__date">
@@ -216,7 +217,7 @@
   </section>
 
   <!-- contact -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="contact-wrapper">
       <div class="contact__text-wrapper">
         <div class="contact__text">
@@ -231,7 +232,7 @@
               <input type="text" id="last-name" placeholder="Your full name..." required>
             </li>
             <li>
-              <input type="email" id="email" placeholder="Your email..." required>
+              <input  type="email" id="email" placeholder="Your email..." required>
             </li>
             <li>
               <input type="tel" id="phone" placeholder="Your phone number..." required>
@@ -251,10 +252,18 @@
           <p>+012 345 6789</p>
         </div>
       </div>
-
     </div>
   </section>
 
+  <section class="footer">
+    <footer class="footer-wrapper">
+      <p class="footer_text footer__rights">© 2015 Company. All right reserved.</p>
+      <p class="footer_text footer__logo">Cahee</p>
+      <p class="footer_text footer__author">Made with <span>love</span> by Auskteez</p>
+    </footer>
+  </section>
+
+  
 
 </body>
 

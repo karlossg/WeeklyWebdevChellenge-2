@@ -551,7 +551,7 @@ template {
           font-weight: 700;
           line-height: 27px; }
         .services .services__wrapper .services__btn-wrapper .services__btn-text:hover {
-          background-color: #e0bfbf;
+          background-color: #d8d0d0;
           cursor: pointer; }
       .services .services__wrapper .services__btn-wrapper .services__btn-image {
         text-align: center;
@@ -566,7 +566,6 @@ template {
       .services .services__wrapper .services__slogan-wrapper .services__slogan-image {
         padding-left: 2%; }
       .services .services__wrapper .services__slogan-wrapper .services__slogan-text {
-        position: relative;
         bottom: 50%;
         left: -15%; }
         .services .services__wrapper .services__slogan-wrapper .services__slogan-text .services__name-text {
@@ -870,6 +869,7 @@ template {
               font-size: 15px; }
             .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list input:focus {
               opacity: 1;
+              outline: none;
               border-left: 7px solid #355b82;
               font-weight: 700; }
           .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list textarea {
@@ -932,5 +932,31 @@ template {
           font-weight: 700; }
         .contact .contact-wrapper .contact__form-wrapper .contact__adress p {
           padding-bottom: 4%; }
+
+.footer {
+  background-color: #262626; }
+  .footer .footer-wrapper {
+    padding: 1% 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between; }
+    .footer .footer-wrapper .footer__text, .footer .footer-wrapper .footer__rights, .footer .footer-wrapper .footer__author, .footer .footer-wrapper .footer__logo {
+      margin: 0 5%;
+      color: #b9b9b9;
+      line-height: 25px;
+      font-weight: 300; }
+    .footer .footer-wrapper .footer__rights {
+      font-family: Raleway;
+      font-size: 16px; }
+  .footer .footer__author {
+    font-family: Raleway;
+    font-size: 15px; }
+    .footer .footer__author span {
+      color: #ff2b58;
+      font-weight: 700; }
+  .footer .footer__logo {
+    font-family: Pacifico;
+    font-size: 25px;
+    font-weight: 400; }
 
 /*# sourceMappingURL=index.css.map */
