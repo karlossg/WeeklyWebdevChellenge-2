@@ -7,6 +7,14 @@ max-width: 1200px;
 }
 
 // fonts
+@mixin font($colorValue, $fontFamily, $fontSize:"", $fontWeight:"", $lineHeight:"") {
+  color: $colorValue;
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
 @mixin mainFontHuge($colorValue) {
     color: $colorValue;
     font-family: $mainFont;

@@ -5,31 +5,24 @@
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    .footer__text {
-      margin: 0 5%;
-      color: #b9b9b9;
-      line-height: 25px;
-      font-weight: 300;
+    
+    p {
+        margin: 0 2%;
+    }  
+      
     }
     .footer__rights {
-      @extend .footer__text;
-      font-family: Raleway;
-      font-size: 16px;
+        @include font(#b9b9b9, $mainFont, 16px ,300,25px);
+     
     }
   }
   .footer__author {
-    @extend .footer__text;
-    font-family: Raleway;
-    font-size: 15px;
+    @include font(#b9b9b9, $mainFont, 15px ,300,25px);
     span {
       color: #ff2b58;
       font-weight: 700;
     }
   }
   .footer__logo {
-    @extend .footer__text;
-    font-family: Pacifico;
-    font-size: 25px;
-    font-weight: 400;
+    @include font(#b9b9b9, $logoFont, 25px ,300,25px);
   }
-}
