@@ -1,8 +1,5 @@
 .contact {
-  background-image: url("../files/contactBackground.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include background(url("../files/contactBackground.png"), null, no-repeat, cover, center);
   .contact-wrapper {
     @include wrappersSize;
     .contact__text-wrapper {
@@ -29,37 +26,37 @@
            margin-bottom: 3%;
           }
           input {
+            @include placeholder($altFontColor,
+            15px);
+            box-shadow: $BoxShadow;
+            background-color: $contactInputBackground;
             width: 100%;
             height: 52px;
             border: 0;
-            background-color: #00c4c4;
             opacity: 0.5;
             padding-left: 16px;
-            box-shadow: $BoxShadow;
-            color: white;
-            @include placeholder(white,
-            15px);
+            color: $altFontColor;
             &:focus {
               opacity: 1;
               outline: none;
-              border-left: 7px solid #355b82;
+              border-left: 7px solid $contactInputBorderLeft;
               font-weight: 700;
             }
           }
           textarea {
+            @include placeholder($altFontColor, 15px);
+            background-color: $contactInputBackground;
+            box-shadow: $BoxShadow;
             width: 100%;
             height: 252px;
-            background-color: #00c4c4;
             opacity: 0.5;
-            box-shadow: $BoxShadow;
             resize: none;
             padding: 16px 0 0 16px;
-            color: white;
-            @include placeholder(white, 15px);
+            color: $altFontColor;
             &:focus {
               opacity: 1;
               outline: none;
-              border-left: 7px solid #355b82;
+              border-left: 7px solid $contactInputBorderLeft;
               font-weight: 700;
             }
             &::selection {
@@ -74,15 +71,10 @@
         }
       }
       .contact__adress {
+        @include font($mainFontColor, $mainFont, 20px, 300, 25px);
         padding: 1%;
-        color: #262626;
-        font-family: Raleway;
-        font-size: 20px;
-        font-weight: 300;
-        line-height: 25px;
         h3 {
-          font-size: 17px;
-          font-weight: 700;
+          @include font($mainFontColor, $mainFont, 17px, 700, 25px);
         }
         p {
           padding-bottom: 4%;

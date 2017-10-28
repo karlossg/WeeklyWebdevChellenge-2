@@ -20,18 +20,20 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .gallery__images-small {
+          margin: 0;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
         }
       }
       .gallery__images-bottom {
-        margin-top: 2%;
+        margin: 2% 0 0 0  ;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
       }
       .gallery__image {
+        margin: 0;
         position: relative;
         display: inline-block;
         overflow: hidden;
@@ -71,7 +73,7 @@
       }
     }
     .gallery__button-wrapper {
-      margin-top: 3%;
+      margin-top: 5%;
       text-align: center;
       .gallery__button {
         @include mainButton($galleryButtonColor, $galerryButtonOnHoverColor);

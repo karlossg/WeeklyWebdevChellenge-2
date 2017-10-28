@@ -16,9 +16,11 @@
     }
     .blog__gallery-wrapper {
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
       text-shadow: 1px 0.5px 2px #000000;
       .blog__gallery-img {
+        margin: 0;
         position: relative;
         cursor: pointer;
         &:hover {
@@ -46,37 +48,26 @@
         position: absolute;
         bottom: 70%;
         left: 7%;
-        color: #ffffff;
+        color: $altFontColor;
         h1 {
-          margin-top: 10%;
-          font-family: Raleway;
-          font-size: 21px;
-          font-weight: 900;
-          line-height: 25px;
+          @include font($altFontColor, $mainFont, 21px, 900, 25px);
           text-transform: uppercase;
+          margin-top: 10%;
         }
       }
       h2 {
-        font-family: Raleway;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 25px;
+        @include font($altFontColor, $mainFont, 20px, 700, 25px);
         padding: 5%;
         position: absolute;
         bottom: 15%;
         left: 0;
-        color: #ffffff;
       }
       p {
-        font-family: Raleway;
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 25px;
+        @include font($altFontColor, $mainFont, 13px, 300, 25px);
         padding: 5%;
         position: absolute;
         bottom: 2%;
         left: 0;
-        color: #ffffff;
       }
     }
     .blog__button-wrapper {

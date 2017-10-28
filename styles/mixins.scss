@@ -1,18 +1,26 @@
 @import "variables.scss";
-
 // main
 @mixin wrappersSize {
-padding: 5% 0 5% 3%;
-max-width: 1200px;
+    padding: 5% 0%;
+    max-width: 1200px;
+}
+
+// background
+@mixin background($url, $color, $reapet, $size, $position) {
+    background-image: $url;
+    background-color: $color;
+    background-repeat: $reapet;
+    background-size: $size;
+    background-position: $position;
 }
 
 // fonts
 @mixin font($colorValue, $fontFamily, $fontSize:"", $fontWeight:"", $lineHeight:"") {
-  color: $colorValue;
-  font-family: $fontFamily;
-  font-size: $fontSize;
-  font-weight: $fontWeight;
-  line-height: $lineHeight;
+    color: $colorValue;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
 }
 
 @mixin mainFontHuge($colorValue) {
@@ -73,55 +81,55 @@ max-width: 1200px;
     background-color: $colorValue;
     @include mainFontButton($altFontColor);
     &:hover {
-      background-color: $colorValueHover;
-      cursor: pointer;
+        background-color: $colorValueHover;
+        cursor: pointer;
     }
 }
 
 // input
 @mixin placeholder($color, $size:"", $padding:"") {
     &::-webkit-input-placeholder {
-      color: $color;
-      padding: $padding;
-      font-family: $mainFont;
-      @if $size != "" {
-        font-size: $size;
-      }
-      @if $padding != "" {
+        color: $color;
         padding: $padding;
-      }
+        font-family: $mainFont;
+        @if $size !="" {
+            font-size: $size;
+        }
+        @if $padding !="" {
+            padding: $padding;
+        }
     }
     &:-moz-placeholder {
-      color: $color;
-      padding: $padding;
-      font-family: $mainFont;
-      @if $size != "" {
-        font-size: $size;
-      }
-      @if $padding != "" {
+        color: $color;
         padding: $padding;
-      }
+        font-family: $mainFont;
+        @if $size !="" {
+            font-size: $size;
+        }
+        @if $padding !="" {
+            padding: $padding;
+        }
     }
     &::-moz-placeholder {
-      color: $color;
-      padding: $padding;
-      font-family: $mainFont;
-      @if $size != "" {
-        font-size: $size;
-      }
-      @if $padding != "" {
+        color: $color;
         padding: $padding;
-      }
+        font-family: $mainFont;
+        @if $size !="" {
+            font-size: $size;
+        }
+        @if $padding !="" {
+            padding: $padding;
+        }
     }
     &:-ms-input-placeholder {
-      color: $color;
-      padding: $padding;
-      font-family: $mainFont;
-      @if $size != "" {
-        font-size: $size;
-      }
-      @if $padding != "" {
+        color: $color;
         padding: $padding;
-      } 
+        font-family: $mainFont;
+        @if $size !="" {
+            font-size: $size;
+        }
+        @if $padding !="" {
+            padding: $padding;
+        }
     }
-  }
+}
