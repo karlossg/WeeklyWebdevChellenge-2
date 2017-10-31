@@ -1,6 +1,21 @@
 // burger menu
+// let navBurger = document.getElementsByClassName("nav__burger"); 
+// let navMenu = document.getElementsByClassName("nav");
+// let navMenuElement = document.getElementsByClassName("nav__menu-elem");
+
+// function addClass (el, className) {
+//     if (el.classList)
+//     el.classList.add(className);
+//   else
+//     el.className += ' ' + className;
+// }
+// console.log(document.getElementsByClassName("nav__burger"));
+// document.getElementsByClassName("nav__burger")[0].addEventListener("click", addClass('nav', 'nav--open'));
+// document.getElementsByClassName("nav__burger")[0].addEventListener("click", addClass('nav__menu-elem', 'nav__menu-elem--open'));
+// document.getElementsByClassName("nav__burger")[0].addEventListener("click", addClass('nav__burger', 'nav__burger--opened'));
+
 $(".nav__burger").on("click", function(){
-    $(".nav").toggleClass("nav--open");
+    // $(".nav").toggleClass("nav--open");
     $(".nav__menu-elem").toggleClass("nav__menu-elem--open");     
     $(".nav__burger").toggleClass("nav__burger--opened");
 });
