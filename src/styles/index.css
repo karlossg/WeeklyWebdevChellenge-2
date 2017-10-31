@@ -427,7 +427,7 @@ body {
           cursor: pointer; }
 
 .contact {
-  background-image: url("../files/contactBackground-min.png");
+  background-image: url("/files/contactBackground-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
