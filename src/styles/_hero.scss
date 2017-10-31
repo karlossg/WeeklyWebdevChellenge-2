@@ -12,10 +12,10 @@
       width: 100%;
       .hero__slogan {
         padding-top: 20%;
-        @include mainFontBig($mainFontColor);
+        @include font($mainFontColor, $mainFont, 60px, 900, 25px);
       }
       .hero__text {
-        @include mainFontSmall($mainFontColor);
+        @include font($mainFontColor, $mainFont, 17px, 300, 27px);
         padding-top: 4%;
         text-align: justify;
       }

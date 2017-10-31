@@ -186,7 +186,7 @@ body {
         bottom: 50%;
         left: 0; }
         .services .services__wrapper .services__slogan-wrapper .services__slogan-text .services__name-text {
-          color: #fff;
+          color: #262626;
           font-family: Raleway, Helvetica, Arial, sans-serif;
           font-size: 90px;
           font-weight: 700;
@@ -280,7 +280,7 @@ body {
           cursor: pointer; }
 
 .subscribe {
-  background-image: url("../files/subscripeImage-min.png");
+  background-image: url("/files/subscripeImage-min.png");
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover contain;

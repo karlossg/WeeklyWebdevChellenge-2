@@ -6,11 +6,11 @@
       padding: 0 25%;
       text-align: center;
       .blog__text-name {
-        @include mainFontHuge($altFontColor);
+        @include font($altFontColor, $mainFont, 90px, 700, 27px);
         margin-bottom: 10%;
       }
       p {
-        @include mainFontSmall($altFontColor);
+        @include font($altFontColor, $mainFont, 17px, 300, 27px);
         margin-bottom: 10%;
       }
     }

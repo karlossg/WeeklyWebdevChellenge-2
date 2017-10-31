@@ -8,11 +8,11 @@
             padding: 15% 0;
             max-width: 31em;
             .about__title {
-                @include mainFontHuge($altFontColor);
+                @include font($altFontColor, $mainFont, 90px, 700, 27px);
                 margin-bottom: 10%;
             }
             .about__text {
-                @include mainFontSmall($altFontColor);
+                @include font($altFontColor, $mainFont, 17px, 300, 27px);
                 span {
                     display: block;
                 }

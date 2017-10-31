@@ -10,7 +10,7 @@
         margin-bottom: 10%;
       }
       p {
-        @include mainFontSmall($mainFontColor);
+        @include font($mainFontColor, $mainFont, 17px, 300, 27px);
         margin-bottom: 10%;
       }
     }
@@ -65,8 +65,7 @@
           }
         }
         .contact__form-button {
-          @include mainButton(#00c4c4,
-          #0d9b9b);
+          @include mainButton(#00c4c4, #0d9b9b); 
           opacity: 0.5;
         }
       }

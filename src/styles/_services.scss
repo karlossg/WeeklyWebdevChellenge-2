@@ -24,11 +24,7 @@
         h2 {
           text-align: center;
           width: 70%;
-          color: $mainFontColor;
-          font-family: $mainFont;
-          font-size: 20px;
-          font-weight: 700;
-          line-height: 27px;
+          @include font($mainFontColor, $mainFont, 20px, 700, 27px);
         }
         &:hover {
           background-color: #d8d0d0;
@@ -56,7 +52,7 @@
         bottom: 50%;
         left: 0;
         .services__name-text {
-          @include mainFontHuge($altFontColor);
+          @include font($mainFontColor, $mainFont, 90px, 700, 27px);
         }
       }
     }
