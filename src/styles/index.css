@@ -97,8 +97,7 @@ body {
         font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 20px;
         font-weight: 300;
-        line-height: 27px;
-        text-transform: uppercase; }
+        line-height: 27px; }
         .hero .hero__wrapper .hero__slogan-wrapper .hero__button:hover {
           background-color: #ad5036;
           cursor: pointer; }
@@ -273,8 +272,7 @@ body {
         font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 20px;
         font-weight: 300;
-        line-height: 27px;
-        text-transform: uppercase; }
+        line-height: 27px; }
         .gallery .gallery__wrapper .gallery__button-wrapper .gallery__button:hover {
           background-color: #3c6a85;
           cursor: pointer; }
@@ -321,8 +319,7 @@ body {
       font-family: Raleway, Helvetica, Arial, sans-serif;
       font-size: 20px;
       font-weight: 300;
-      line-height: 27px;
-      text-transform: uppercase; }
+      line-height: 27px; }
       .subscribe .subscribe__wrapper .subscribe__form-wrapper .subscribe__form-button:hover {
         background-color: #839646;
         cursor: pointer; }
@@ -420,8 +417,7 @@ body {
         font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 20px;
         font-weight: 300;
-        line-height: 27px;
-        text-transform: uppercase; }
+        line-height: 27px; }
         .blog .blog-wrapper .blog__button-wrapper .blog__button:hover {
           background-color: #a52532;
           cursor: pointer; }
@@ -542,7 +538,6 @@ body {
           font-size: 20px;
           font-weight: 300;
           line-height: 27px;
-          text-transform: uppercase;
           opacity: 0.5; }
           .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-button:hover {
             background-color: #0d9b9b;

@@ -1,9 +1,36 @@
 @import "variables.scss";
+
 // main
 @mixin wrappersSize {
     padding: 5% 0%;
     max-width: 1200px;
 }
+
+// RWD
+$breakpoints: (
+    'small':  767px,
+    'medium': 992px,
+    'large':  1200px
+  ) !default;
+
+// @param {String} $breakpoint - Breakpoint name
+// @require $breakpoints
+@mixin respond-to($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+      }
+    }
+   
+    // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+  }
+
 
 // background
 @mixin background($url, $color, $reapet, $size, $position) {
@@ -30,7 +57,7 @@
     height: 57px;
     box-shadow: $BoxShadow;
     background-color: $colorValue;
-    @include mainFontButton($altFontColor);
+    @include font($altFontColor, $mainFont, 20px, 300, 27px);
     &:hover {
         background-color: $colorValueHover;
         cursor: pointer;
