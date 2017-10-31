@@ -1,5 +1,5 @@
 .contact {
-  @include background(url("../files/contactBackground-min.png"), null, no-repeat, cover, center);
+  @include background(url("/files/contactBackground-min.png"), null, no-repeat, cover, center);
   .contact-wrapper {
     @include wrappersSize;
     .contact__text-wrapper {
