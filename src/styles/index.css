@@ -25,6 +25,11 @@ body {
     width: 100%;
     z-index: 1000;
     text-shadow: 0.5px 0.5px 5px #F9F8FB; }
+    @media (max-width: 800px) {
+      .header .header__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; } }
     .header .header__wrapper.hidden {
       transform: translateY(-100%);
       visibility: hidden; }
@@ -35,29 +40,78 @@ body {
     font-size: 50px;
     font-weight: 400;
     line-height: 25px; }
+    @media (max-width: 1200px) {
+      .header .header__logo {
+        margin: 1% 0 5% 0; } }
 
 .nav {
-  margin-left: 38%; }
+  margin-left: 35%; }
+  @media (max-width: 1200px) {
+    .nav {
+      margin-left: 8%; } }
+  @media (max-width: 800px) {
+    .nav {
+      background: rgba(255, 255, 255, 0.6);
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 0; } }
   .nav .nav__main-nav--hidden {
     display: none; }
+  .nav .nav__burger {
+    display: none;
+    background-image: url("/files/hamburgerMenu.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: center; }
+    @media (max-width: 800px) {
+      .nav .nav__burger {
+        display: block;
+        width: 100%;
+        height: 40px;
+        cursor: pointer; } }
+  .nav .nav__burger--opened {
+    background-image: url("/files/openHamburgerMenu.png");
+    background-repeat: no-repeat;
+    background-size: 40px 40px;
+    background-position: center; }
   .nav .nav__menu-elem {
     list-style-type: none;
     float: left;
     margin-left: 35px;
     margin-top: 10px; }
-    .nav .nav__menu-elem .nav__menu-link {
-      color: #262626;
-      font-family: Raleway, Helvetica, Arial, sans-serif;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 25px;
-      text-decoration: none;
-      text-transform: uppercase;
-      height: 12px; }
-      .nav .nav__menu-elem .nav__menu-link.nav__menu-link--active {
-        border-top: 5px solid #ff6033; }
-      .nav .nav__menu-elem .nav__menu-link:hover {
-        border-top: 5px solid #ff6033; }
+    @media (max-width: 800px) {
+      .nav .nav__menu-elem {
+        display: none;
+        overflow: hidden;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 4% 0; } }
+  @media (max-width: 800px) {
+    .nav .nav__menu-elem--open {
+      display: block; } }
+  .nav .nav__menu-link {
+    color: #262626;
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 12px; }
+    @media (max-width: 800px) {
+      .nav .nav__menu-link {
+        color: #262626;
+        text-shadow: none; } }
+    .nav .nav__menu-link.nav__menu-link--active {
+      border-top: 5px solid #ff6033; }
+    .nav .nav__menu-link:hover {
+      border-top: 5px solid #ff6033; }
+
+@media (max-width: 800px) {
+  .nav--open {
+    height: auto; } }
 
 .hero {
   padding: 5% 0; }
@@ -109,14 +163,32 @@ body {
 
 .about {
   background-color: #00c4c4; }
+  @media (max-width: 480px) {
+    .about {
+      max-width: 200px; } }
   .about .about__wrapper {
     padding: 5% 0%;
     max-width: 1200px;
     display: flex; }
+    @media (max-width: 1200px) {
+      .about .about__wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center; } }
+    @media (max-width: 800px) {
+      .about .about__wrapper .about__image {
+        display: none; } }
+    @media (max-width: 480px) {
+      .about .about__wrapper .about__image {
+        display: none; } }
     .about .about__wrapper .about__text-wrapper {
       width: 70%;
       padding: 15% 0;
-      max-width: 31em; }
+      max-width: 95%; }
+      @media (max-width: 1200px) {
+        .about .about__wrapper .about__text-wrapper {
+          padding: 12% 0 0 0;
+          max-width: 70%; } }
       .about .about__wrapper .about__text-wrapper .about__title {
         color: #fff;
         font-family: Raleway, Helvetica, Arial, sans-serif;
@@ -124,6 +196,12 @@ body {
         font-weight: 700;
         line-height: 27px;
         margin-bottom: 10%; }
+        @media (max-width: 1200px) {
+          .about .about__wrapper .about__text-wrapper .about__title {
+            line-height: 80px; } }
+        @media (max-width: 480px) {
+          .about .about__wrapper .about__text-wrapper .about__title {
+            font-size: 60px; } }
       .about .about__wrapper .about__text-wrapper .about__text {
         color: #fff;
         font-family: Raleway, Helvetica, Arial, sans-serif;

@@ -1,22 +1,49 @@
 .about {
-    background-color: $aboutBackgroundColor;
-    .about__wrapper {
-        @include wrappersSize;
-        display: flex;
-        .about__text-wrapper {
-            width: 70%;
-            padding: 15% 0;
-            max-width: 31em;
-            .about__title {
-                @include font($altFontColor, $mainFont, 90px, 700, 27px);
-                margin-bottom: 10%;
-            }
-            .about__text {
-                @include font($altFontColor, $mainFont, 17px, 300, 27px);
-                span {
-                    display: block;
-                }
-            }
-        }
+  background-color: $aboutBackgroundColor;
+  @include respond-to('small') {
+    max-width: 200px;
+  } 
+  .about__wrapper {
+    @include wrappersSize;
+    display: flex;
+    @include respond-to('large') {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
     }
+   
+    .about__image {
+        @include respond-to('medium') {
+            display: none;
+          } 
+        @include respond-to('small') {
+            display: none;
+          } 
+    }
+    .about__text-wrapper {
+      width: 70%;
+      padding: 15% 0;
+      max-width: 95%;
+      @include respond-to('large') {
+        padding: 12% 0 0 0;
+        max-width: 70%;
+      }
+      .about__title {
+        @include font($altFontColor, $mainFont, 90px, 700, 27px);
+        margin-bottom: 10%;
+        @include respond-to('large') {
+          line-height: 80px;
+        }
+        @include respond-to('small') {
+            font-size: 60px;
+          } 
+      }
+      .about__text {
+        @include font($altFontColor, $mainFont, 17px, 300, 27px);
+        span {
+          display: block;
+        }
+      }
+    }
+  }
 }

@@ -8,18 +8,19 @@
 
 // RWD
 $breakpoints: (
-    'small':  767px,
-    'medium': 992px,
-    'large':  1200px
+    'small':  (max-width: 480px),
+    'medium': (max-width: 800px),
+    'large':  (max-width: 1200px),
+    
   ) !default;
 
-// @param {String} $breakpoint - Breakpoint name
-// @require $breakpoints
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
 @mixin respond-to($breakpoint) {
     // If the key exists in the map
     @if map-has-key($breakpoints, $breakpoint) {
       // Prints a media query based on the value
-      @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @media #{inspect(map-get($breakpoints, $breakpoint))} {
         @content;
       }
     }

@@ -3,7 +3,12 @@
   padding: 50px 0 0 0;
   position: relative;
   max-width: 1200px;
-  .header__wrapper {
+    .header__wrapper {
+     @include respond-to('medium') {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+     }
     max-width: 1200px;
     display: flex;
     position: fixed;
@@ -19,24 +24,76 @@
   .header__logo {
     margin: 1% 0;
     @include font($mainFontColor, $logoFont, 50px, 400, 25px);
+    @include respond-to('large') {
+      margin: 1% 0 5% 0;
+    }
   }
 }
 
 .nav {
-  margin-left: 38%;
+  margin-left: 35%;
+  @include respond-to('large') {
+    margin-left: 8%;
+  }
+  @include respond-to('medium') {
+    background: rgba(255, 255, 255, .6);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0;
+  }
+  
   .nav__main-nav--hidden {
     display: none;
+  }
+  .nav__burger {
+    display: none;
+    @include background(url("/files/hamburgerMenu.png"), null, no-repeat, 40px 40px, center);
+    @include respond-to('medium') {
+      display: block;
+      width: 100%;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+  .nav__burger--opened {
+    @include background(url("/files/openHamburgerMenu.png"), null, no-repeat, 40px 40px, center);
+    // @include respond-to('medium') {
+    //   display: block;
+    //   width: 100%;
+    //   height: 40px;
+    //   cursor: pointer;
+    // }
   }
   .nav__menu-elem {
     list-style-type: none;
     float: left;
     margin-left: 35px;
     margin-top: 10px;
+    @include respond-to('medium') {
+      display: none;
+      overflow: hidden;
+      float: none;
+      width: 100%;
+      text-align: center;
+      margin: 4% 0;
+    }
+  }
+   .nav__menu-elem--open {
+    @include respond-to('medium') {
+        display: block;
+    }
+   }
+    
     .nav__menu-link {
       @include font($mainFontColor, $mainFont, 16px, 700, 25px);
       text-decoration: none;
       text-transform: uppercase;
       height: 12px;
+      @include respond-to('medium') {
+        color: $mainFontColor;
+        text-shadow: none;
+      }
       &.nav__menu-link--active {
         border-top: 5px solid $activeMenuColor;
         
@@ -46,4 +103,8 @@
       }
     }
   }
-}
+  .nav--open {
+    @include respond-to('medium') {
+      height: auto;
+    }
+   }
