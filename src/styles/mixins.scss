@@ -23,55 +23,6 @@
     line-height: $lineHeight;
 }
 
-@mixin mainFontHuge($colorValue) {
-    color: $colorValue;
-    font-family: $mainFont;
-    font-size: 90px;
-    font-weight: 700;
-    line-height: 27px;
-}
-
-@mixin mainFontBig($colorValue) {
-    color: $colorValue;
-    font-family: $mainFont;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 25px;
-}
-
-@mixin mainFontMedium($colorValue) {
-    color: $colorValue;
-    font-family: $mainFont;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 27px;
-}
-
-@mixin mainFontSmall($colorValue) {
-    color: $colorValue;
-    font-family: $mainFont;
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 27px;
-}
-
-@mixin mainFontMini($colorValue) {
-    color: $colorValue;
-    font-family: $mainFont;
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 27px;
-}
-
-@mixin mainFontButton($colorValue) {
-    color: $colorValue;
-    font-family: $mainFont;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 27px;
-    text-transform: uppercase;
-}
-
 // button
 @mixin mainButton($colorValue, $colorValueHover) {
     border: 0;
