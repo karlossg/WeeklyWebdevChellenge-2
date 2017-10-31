@@ -5,7 +5,7 @@
     .blog__text-wrapper {
       padding: 0 25%;
       text-align: center;
-      h1 {
+      .blog__text-name {
         @include mainFontHuge($altFontColor);
         margin-bottom: 10%;
       }
@@ -49,13 +49,13 @@
         bottom: 70%;
         left: 7%;
         color: $altFontColor;
-        h1 {
+        h2 {
           @include font($altFontColor, $mainFont, 21px, 900, 25px);
           text-transform: uppercase;
           margin-top: 10%;
         }
       }
-      h2 {
+      h3 {
         @include font($altFontColor, $mainFont, 20px, 700, 25px);
         padding: 5%;
         position: absolute;

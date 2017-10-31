@@ -6,7 +6,7 @@
       padding: 0 35%;
       text-align: center;
       h1 {
-        @include mainFontHuge($mainFontColor);
+        @include font($mainFontColor, $mainFont, 90px, 700, 27px);
         margin-bottom: 10%;
       }
       p {

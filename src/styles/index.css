@@ -200,7 +200,7 @@ body {
     .gallery .gallery__wrapper .gallery__text-wrapper {
       padding: 0 25%;
       text-align: center; }
-      .gallery .gallery__wrapper .gallery__text-wrapper h1 {
+      .gallery .gallery__wrapper .gallery__text-wrapper h2 {
         color: #262626;
         font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 90px;
@@ -335,7 +335,7 @@ body {
     .blog .blog-wrapper .blog__text-wrapper {
       padding: 0 25%;
       text-align: center; }
-      .blog .blog-wrapper .blog__text-wrapper h1 {
+      .blog .blog-wrapper .blog__text-wrapper .blog__text-name {
         color: #fff;
         font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 90px;
@@ -379,7 +379,7 @@ body {
         bottom: 70%;
         left: 7%;
         color: #fff; }
-        .blog .blog-wrapper .blog__gallery-wrapper .blog__date h1 {
+        .blog .blog-wrapper .blog__gallery-wrapper .blog__date h2 {
           color: #fff;
           font-family: Raleway, Helvetica, Arial, sans-serif;
           font-size: 21px;
@@ -387,7 +387,7 @@ body {
           line-height: 25px;
           text-transform: uppercase;
           margin-top: 10%; }
-      .blog .blog-wrapper .blog__gallery-wrapper h2 {
+      .blog .blog-wrapper .blog__gallery-wrapper h3 {
         color: #fff;
         font-family: Raleway, Helvetica, Arial, sans-serif;
         font-size: 20px;
@@ -570,6 +570,8 @@ body {
     max-width: 1200px;
     display: flex;
     justify-content: space-between; }
+    .footer .footer-wrapper h6 {
+      display: none; }
     .footer .footer-wrapper p {
       margin: 0 2%; }
   .footer .footer__rights {
