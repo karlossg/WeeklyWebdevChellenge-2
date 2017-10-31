@@ -55,20 +55,17 @@ body {
       margin: 0;
       padding: 0;
       width: 100%;
-      height: 0;
-      transition: height 1s ease-out; } }
+      height: 0; } }
   .nav .nav__main-nav--hidden {
     display: none; }
   .nav .nav__burger {
     display: none;
-    transition: display 1s ease-out;
     background-image: url("../../files/hamburgerMenu.png");
     background-repeat: no-repeat;
     background-size: 35px 35px;
     background-position: center; }
     @media (max-width: 800px) {
       .nav .nav__burger {
-        transition: display 2s ease-in;
         display: block;
         width: 100%;
         height: 40px;
@@ -119,8 +116,7 @@ body {
 
 @media (max-width: 800px) {
   .nav--open {
-    height: auto;
-    transition: hight 2s ease-in; } }
+    height: auto; } }
 
 .hero {
   padding: 5% 0; }

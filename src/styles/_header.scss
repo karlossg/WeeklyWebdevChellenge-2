@@ -52,21 +52,18 @@
     padding: 0;
     width: 100%;
     height: 0;
-    transition: height 1s ease-out;
   }
   .nav__main-nav--hidden {
     display: none;
   }
   .nav__burger {
     display: none;
-    transition: display 1s ease-out;
     @include background(url("../../files/hamburgerMenu.png"),
     null,
     no-repeat,
     35px 35px,
     center);
     @include respond-to('medium') {
-      transition: display 2s ease-in;
       display: block;
       width: 100%;
       height: 40px;
@@ -130,6 +127,5 @@
 .nav--open {
   @include respond-to('medium') {
     height: auto;
-    transition: hight 2s ease-in;
   }
 }
