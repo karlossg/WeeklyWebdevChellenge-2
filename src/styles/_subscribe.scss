@@ -1,5 +1,5 @@
 .subscribe {
-  @include background(url("/files/subscripeImage-min.png"), #ffffff, no-repeat, cover contain, center);
+  @include background(url("../../files/subscripeImage-min.png"), #ffffff, no-repeat, cover contain, center);
   .subscribe__wrapper {
     max-width: 1200px;
     padding: 8% 0;
