@@ -1,18 +1,25 @@
 .header {
-  @include background(url("../../files/heroBackground-min.png"), null, no-repeat, cover contain, center);
+  @include background(url("../../files/heroBackground-min.png"),
+  null,
+  no-repeat,
+  cover contain,
+  center);
   padding: 50px 0 0 0;
   position: relative;
   max-width: 1200px;
-    .header__wrapper {
-     @include respond-to('medium') {
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-     }
+  .header__wrapper {
+    @include respond-to('medium') {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
     max-width: 1200px;
     display: flex;
     position: fixed;
-    transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: transform 1s cubic-bezier(0.86,
+    0,
+    0.07,
+    1);
     width: 100%;
     z-index: 1000;
     text-shadow: 0.5px 0.5px 5px #F9F8FB;
@@ -23,7 +30,11 @@
   }
   .header__logo {
     margin: 1% 0;
-    @include font($mainFontColor, $logoFont, 50px, 400, 25px);
+    @include font($mainFontColor,
+    $logoFont,
+    50px,
+    400,
+    25px);
     @include respond-to('large') {
       margin: 1% 0 5% 0;
     }
@@ -41,15 +52,21 @@
     padding: 0;
     width: 100%;
     height: 0;
+    transition: height 1s ease-out;
   }
-  
   .nav__main-nav--hidden {
     display: none;
   }
   .nav__burger {
     display: none;
-    @include background(url("../../files/hamburgerMenu.png"), null, no-repeat, 35px 35px, center);
+    transition: display 1s ease-out;
+    @include background(url("../../files/hamburgerMenu.png"),
+    null,
+    no-repeat,
+    35px 35px,
+    center);
     @include respond-to('medium') {
+      transition: display 2s ease-in;
       display: block;
       width: 100%;
       height: 40px;
@@ -57,9 +74,12 @@
     }
   }
   .nav__burger--opened {
-    
     @include respond-to('medium') {
-      @include background(url("../../files/openHamburgerMenu.png"), null, no-repeat, 35px 35px, center);
+      @include background(url("../../files/openHamburgerMenu.png"),
+      null,
+      no-repeat,
+      35px 35px,
+      center);
       display: block;
       width: 100%;
       height: 40px;
@@ -80,32 +100,36 @@
       margin: 4% 0;
     }
   }
-   .nav__menu-elem--open {
+  .nav__menu-elem--open {
     @include respond-to('medium') {
-        display: block;
-    }
-   }
-    
-    .nav__menu-link {
-      @include font($mainFontColor, $mainFont, 16px, 700, 25px);
-      text-decoration: none;
-      text-transform: uppercase;
-      height: 12px;
-      @include respond-to('medium') {
-        color: $mainFontColor;
-        text-shadow: none;
-      }
-      &.nav__menu-link--active {
-        border-top: 5px solid $activeMenuColor;
-        
-      }
-      &:hover {
-        border-top: 5px solid $activeMenuColor;
-      }
+      display: block;
     }
   }
-  .nav--open {
+  .nav__menu-link {
+    @include font($mainFontColor,
+    $mainFont,
+    16px,
+    700,
+    25px);
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 12px;
     @include respond-to('medium') {
-      height: auto;
+      color: $mainFontColor;
+      text-shadow: none;
     }
-   }
+    &.nav__menu-link--active {
+      border-top: 5px solid $activeMenuColor;
+    }
+    &:hover {
+      border-top: 5px solid $activeMenuColor;
+    }
+  }
+}
+
+.nav--open {
+  @include respond-to('medium') {
+    height: auto;
+    transition: hight 2s ease-in;
+  }
+}
