@@ -10,7 +10,7 @@ body {
   background-color: #F9F8FB; }
 
 .header {
-  background-image: url("../files/heroBackground.png");
+  background-image: url("/files/heroBackground-min.png");
   background-repeat: no-repeat;
   background-size: cover contain;
   background-position: center;
@@ -280,7 +280,7 @@ body {
           cursor: pointer; }
 
 .subscribe {
-  background-image: url("../files/subscripeImage.png");
+  background-image: url("../files/subscripeImage-min.png");
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover contain;
@@ -427,7 +427,7 @@ body {
           cursor: pointer; }
 
 .contact {
-  background-image: url("../files/contactBackground.png");
+  background-image: url("../files/contactBackground-min.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
