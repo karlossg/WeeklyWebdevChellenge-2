@@ -2,9 +2,15 @@
   @include background(url("../../files/contactBackground-min.png"), null, no-repeat, cover, center);
   .contact-wrapper {
     @include wrappersSize;
+    @include respond-to('large') {
+      padding: 8% 0;
+    }
     .contact__text-wrapper {
       padding: 0 35%;
       text-align: center;
+      @include respond-to('large') {
+        padding: 0 15%;
+      }
       h1 {
         @include font($mainFontColor, $mainFont, 90px, 700, 27px);
         margin-bottom: 10%;
@@ -17,6 +23,11 @@
     .contact__form-wrapper {
       display: flex;
       justify-content: space-between;
+      @include respond-to('large') {
+        
+        flex-direction: column;
+        align-items: center;
+      }
       .contact__form {
         margin: 0;
         width: 42%;
@@ -72,6 +83,9 @@
       .contact__adress {
         @include font($mainFontColor, $mainFont, 20px, 300, 25px);
         padding: 1%;
+        @include respond-to('large') {
+          padding: 3%;
+        }
         h3 {
           @include font($mainFontColor, $mainFont, 17px, 700, 25px);
         }

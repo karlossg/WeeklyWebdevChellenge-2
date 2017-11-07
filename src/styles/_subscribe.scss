@@ -4,9 +4,17 @@
     max-width: 1200px;
     padding: 8% 0;
     .subscribe__text-wrapper {
+      text-shadow: 0.5px 0.5px 5px #F9F8FB;
+      @include respond-to('medium') {
+        @include font($mainFontColor, $mainFont, 17px, 300, 37px);
+      }
       h1 {
         @include font($mainFontColor, $mainFont, 60px, 900, 25px);
         margin-bottom: 2%;
+        @include respond-to('medium') {
+          @include font($mainFontColor, $mainFont, 60px, 900, 75px);
+          margin-bottom: 3%;
+        }
       }
       p {
         @include font($mainFontColor, $mainFont, 17px, 300, 27px);
@@ -19,9 +27,15 @@
         width: 560px;
         height: 55px;
         opacity: 0.5;
+        @include respond-to('medium') {
+          width: 400px;
+        }
       }
       .subscribe__form-button {
         @include mainButton($subscribeButtonColor, $subscribeButtonOnHoverColor);
+        @include respond-to('medium') {
+          margin-top: 4%;
+        }
     }
   }
 }

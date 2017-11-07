@@ -1,8 +1,5 @@
 .about {
   background-color: $aboutBackgroundColor;
-  @include respond-to('small') {
-    max-width: 200px;
-  } 
   .about__wrapper {
     @include wrappersSize;
     display: flex;
@@ -25,10 +22,9 @@
           } 
     }
     .about__text-wrapper {
-      
       padding: 15% 5%;
       @include respond-to('large') {
-        padding: 12% 0 0 0;
+        padding: 8%;
         max-width: 70%;
       }
       .about__title {
@@ -36,9 +32,11 @@
         margin-bottom: 10%;
         @include respond-to('large') {
           line-height: 80px;
+          text-align: center;
         }
-        @include respond-to('small') {
+        @include respond-to('medium') {
             font-size: 60px;
+            line-height: 120px;
           } 
       }
       .about__text {

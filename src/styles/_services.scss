@@ -5,6 +5,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include respond-to('large') {
+      flex-direction: column-reverse;
+      padding: 8% 0;
+    }
+   
+    }
     .services__btn-wrapper {
       padding-left: 10%;
       display: flex;
@@ -12,6 +18,7 @@
       justify-content: space-around;
       max-height: 28em;
       margin-top: 6%;
+      
       .services__btn-text {
         width: 26.375em;
         height: 6.375em;
@@ -21,6 +28,9 @@
         align-content: space-around;
         justify-content: center;
         align-items: center;
+        @include respond-to('large') {
+          margin: 2%;
+        }
         h2 {
           text-align: center;
           width: 70%;
@@ -40,19 +50,41 @@
         img {
           padding: 20% 0;
         }
+        
       }
     }
     .services__slogan-wrapper {
       padding-left: 5%;
       .services__slogan-image {
         padding-left: 15%;
+        @include respond-to('large') {
+          margin-top: 5%;
+        }
+        @include respond-to('medium') {
+          display: none;
+      
+        }
       }
       .services__slogan-text {
         position: relative;
         bottom: 50%;
         left: 0;
+        @include respond-to('large') {
+          bottom: 290px;
+        }
+        @include respond-to('medium') {
+          position: static;
+          padding-top: 5%;
+          text-align: center;
+        }
         .services__name-text {
           @include font($mainFontColor, $mainFont, 90px, 700, 27px);
+          @include respond-to('medium') {
+            @include font($mainFontColor, $mainFont, 75px, 700, 27px);
+          }
+          @include respond-to('medium') {
+            @include font($mainFontColor, $mainFont, 55px, 700, 27px);
+          }
         }
       }
     }

@@ -5,6 +5,9 @@
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    @include respond-to('small') {
+      flex-direction: column;
+    }
     h6 {
       display: none;
     }
