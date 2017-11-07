@@ -4,7 +4,8 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900");
 * {
   margin: 0 auto;
-  padding: 0; }
+  padding: 0;
+  max-width: 100%; }
 
 body {
   background-color: #F9F8FB; }
@@ -257,6 +258,12 @@ body {
       @media (max-width: 1200px) {
         .services .services__btn-wrapper .services__btn-text {
           margin: 2%; } }
+      @media (max-width: 800px) {
+        .services .services__btn-wrapper .services__btn-text {
+          width: 18em; } }
+      @media (max-width: 800px) {
+        .services .services__btn-wrapper .services__btn-text {
+          width: 10em; } }
       .services .services__btn-wrapper .services__btn-text h2 {
         text-align: center;
         width: 70%;
