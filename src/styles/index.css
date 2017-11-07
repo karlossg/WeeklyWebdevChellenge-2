@@ -261,7 +261,7 @@ body {
       @media (max-width: 800px) {
         .services .services__btn-wrapper .services__btn-text {
           width: 18em; } }
-      @media (max-width: 800px) {
+      @media (max-width: 480px) {
         .services .services__btn-wrapper .services__btn-text {
           width: 10em; } }
       .services .services__btn-wrapper .services__btn-text h2 {
@@ -671,6 +671,9 @@ body {
       .contact .contact-wrapper .contact__form-wrapper .contact__form {
         margin: 0;
         width: 42%; }
+        @media (max-width: 800px) {
+          .contact .contact-wrapper .contact__form-wrapper .contact__form {
+            width: 90%; } }
         .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list {
           list-style-type: none; }
           .contact .contact-wrapper .contact__form-wrapper .contact__form .contact__form-list li {

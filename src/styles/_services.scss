@@ -35,7 +35,7 @@
         @include respond-to('medium') {
           width: 18em;
         }
-        @include respond-to('medium') {
+        @include respond-to('small') {
           width: 10em;
         }
         h2 {
