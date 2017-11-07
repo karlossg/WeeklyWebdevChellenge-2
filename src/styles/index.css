@@ -236,87 +236,88 @@ body {
     justify-content: space-between; }
     @media (max-width: 1200px) {
       .services .services__wrapper {
-        flex-direction: column-reverse; } }
-    .services .services__wrapper .services__btn-wrapper {
-      padding-left: 10%;
+        flex-direction: column-reverse;
+        padding: 8% 0; } }
+  .services .services__btn-wrapper {
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-height: 28em;
+    margin-top: 6%; }
+    .services .services__btn-wrapper .services__btn-text {
+      width: 26.375em;
+      height: 6.375em;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
       display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      max-height: 28em;
-      margin-top: 6%; }
-      .services .services__wrapper .services__btn-wrapper .services__btn-text {
-        width: 26.375em;
-        height: 6.375em;
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-        display: flex;
-        align-content: space-around;
-        justify-content: center;
-        align-items: center; }
-        @media (max-width: 1200px) {
-          .services .services__wrapper .services__btn-wrapper .services__btn-text {
-            margin: 2%; } }
-        .services .services__wrapper .services__btn-wrapper .services__btn-text h2 {
-          text-align: center;
-          width: 70%;
-          color: #262626;
-          font-family: Raleway, Helvetica, Arial, sans-serif;
-          font-size: 20px;
-          font-weight: 700;
-          line-height: 27px; }
-        .services .services__wrapper .services__btn-wrapper .services__btn-text:hover {
-          background-color: #d8d0d0;
-          cursor: pointer; }
-      .services .services__wrapper .services__btn-wrapper .services__btn-image {
+      align-content: space-around;
+      justify-content: center;
+      align-items: center; }
+      @media (max-width: 1200px) {
+        .services .services__btn-wrapper .services__btn-text {
+          margin: 2%; } }
+      .services .services__btn-wrapper .services__btn-text h2 {
         text-align: center;
-        float: right;
-        border-left: solid 2px #9d9d9d;
-        width: 30%;
-        height: 100%; }
-        .services .services__wrapper .services__btn-wrapper .services__btn-image img {
-          padding: 20% 0; }
-    .services .services__wrapper .services__slogan-wrapper {
-      padding-left: 5%; }
-      .services .services__wrapper .services__slogan-wrapper .services__slogan-image {
-        padding-left: 15%; }
-        @media (max-width: 1200px) {
-          .services .services__wrapper .services__slogan-wrapper .services__slogan-image {
-            margin-top: 5%; } }
+        width: 70%;
+        color: #262626;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px; }
+      .services .services__btn-wrapper .services__btn-text:hover {
+        background-color: #d8d0d0;
+        cursor: pointer; }
+    .services .services__btn-wrapper .services__btn-image {
+      text-align: center;
+      float: right;
+      border-left: solid 2px #9d9d9d;
+      width: 30%;
+      height: 100%; }
+      .services .services__btn-wrapper .services__btn-image img {
+        padding: 20% 0; }
+  .services .services__slogan-wrapper {
+    padding-left: 5%; }
+    .services .services__slogan-wrapper .services__slogan-image {
+      padding-left: 15%; }
+      @media (max-width: 1200px) {
+        .services .services__slogan-wrapper .services__slogan-image {
+          margin-top: 5%; } }
+      @media (max-width: 800px) {
+        .services .services__slogan-wrapper .services__slogan-image {
+          display: none; } }
+    .services .services__slogan-wrapper .services__slogan-text {
+      position: relative;
+      bottom: 50%;
+      left: 0; }
+      @media (max-width: 1200px) {
+        .services .services__slogan-wrapper .services__slogan-text {
+          bottom: 290px; } }
+      @media (max-width: 800px) {
+        .services .services__slogan-wrapper .services__slogan-text {
+          position: static;
+          padding-top: 5%;
+          text-align: center; } }
+      .services .services__slogan-wrapper .services__slogan-text .services__name-text {
+        color: #262626;
+        font-family: Raleway, Helvetica, Arial, sans-serif;
+        font-size: 90px;
+        font-weight: 700;
+        line-height: 27px; }
         @media (max-width: 800px) {
-          .services .services__wrapper .services__slogan-wrapper .services__slogan-image {
-            display: none; } }
-      .services .services__wrapper .services__slogan-wrapper .services__slogan-text {
-        position: relative;
-        bottom: 50%;
-        left: 0; }
-        @media (max-width: 1200px) {
-          .services .services__wrapper .services__slogan-wrapper .services__slogan-text {
-            bottom: 290px; } }
+          .services .services__slogan-wrapper .services__slogan-text .services__name-text {
+            color: #262626;
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 75px;
+            font-weight: 700;
+            line-height: 27px; } }
         @media (max-width: 800px) {
-          .services .services__wrapper .services__slogan-wrapper .services__slogan-text {
-            position: static;
-            padding-top: 5%;
-            text-align: center; } }
-        .services .services__wrapper .services__slogan-wrapper .services__slogan-text .services__name-text {
-          color: #262626;
-          font-family: Raleway, Helvetica, Arial, sans-serif;
-          font-size: 90px;
-          font-weight: 700;
-          line-height: 27px; }
-          @media (max-width: 800px) {
-            .services .services__wrapper .services__slogan-wrapper .services__slogan-text .services__name-text {
-              color: #262626;
-              font-family: Raleway, Helvetica, Arial, sans-serif;
-              font-size: 75px;
-              font-weight: 700;
-              line-height: 27px; } }
-          @media (max-width: 800px) {
-            .services .services__wrapper .services__slogan-wrapper .services__slogan-text .services__name-text {
-              color: #262626;
-              font-family: Raleway, Helvetica, Arial, sans-serif;
-              font-size: 55px;
-              font-weight: 700;
-              line-height: 27px; } }
+          .services .services__slogan-wrapper .services__slogan-text .services__name-text {
+            color: #262626;
+            font-family: Raleway, Helvetica, Arial, sans-serif;
+            font-size: 55px;
+            font-weight: 700;
+            line-height: 27px; } }
 
 .gallery {
   background-color: #ffe92f; }
