@@ -8,9 +8,19 @@
     .gallery__text-wrapper {
       padding: 0 25%;
       text-align: center;
+      @include respond-to('medium') {
+        padding: 0 15%;
+      }
       h2 {
         @include font($mainFontColor, $mainFont, 90px, 700, 27px);
         margin-bottom: 10%;
+        @include respond-to('large') {
+          margin-bottom: 20%;
+        }
+        @include respond-to('medium') {
+          margin-bottom: 20%;
+          padding-right: 300px;
+        }
       }
       p {
         @include font($mainFontColor, $mainFont, 17px, 300, 27px);
@@ -49,7 +59,7 @@
         }
       }
       .gallery__images-bottom {
-        margin-top: 2%;
+        margin-bottom: 2%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
