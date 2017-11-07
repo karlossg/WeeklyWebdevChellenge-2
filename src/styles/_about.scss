@@ -8,31 +8,37 @@
       align-items: center;
       justify-content: center;
     }
-   
     .about__image {
+      width: 100%;
        img {
          width: 600px;
          height: 600px;
        }
+       @include respond-to('large') {
+        text-align: center;
+      } 
         @include respond-to('medium') {
             display: none;
           } 
-        @include respond-to('small') {
-            display: none;
-          } 
+        
     }
     .about__text-wrapper {
       padding: 15% 5%;
       @include respond-to('large') {
         padding: 8%;
+        max-width: 80%;
+      }
+      @include respond-to('medium') {
+        padding: 0;
         max-width: 70%;
       }
       .about__title {
         @include font($altFontColor, $mainFont, 90px, 700, 27px);
-        margin-bottom: 10%;
+        margin-bottom: 5%;
         @include respond-to('large') {
           line-height: 80px;
           text-align: center;
+         
         }
         @include respond-to('medium') {
             font-size: 60px;
@@ -43,6 +49,10 @@
         @include font($altFontColor, $mainFont, 17px, 300, 27px);
         span {
           display: block;
+        }
+        @include respond-to('large') {
+          
+          margin-bottom: 5%;
         }
       }
     }

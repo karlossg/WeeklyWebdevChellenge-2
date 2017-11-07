@@ -1,19 +1,18 @@
 .gallery {
+  
   background-color: $galleryBackgroundColor;
   .gallery__wrapper {
     @include wrappersSize;
     @include respond-to('large') {
-      padding: 8% 0;
+      display: flex;
+      flex-direction: column;
+      align-content: center;  
     }
     .gallery__text-wrapper {
-      padding: 0 25%;
-      text-align: center;
-      @include respond-to('medium') {
-        padding: 0 15%;
-      }
+      
       h2 {
         @include font($mainFontColor, $mainFont, 90px, 700, 27px);
-        margin-bottom: 10%;
+        // margin: 5%;
         @include respond-to('large') {
           margin-bottom: 20%;
         }
