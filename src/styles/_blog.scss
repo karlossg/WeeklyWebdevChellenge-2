@@ -8,6 +8,12 @@
     .blog__text-wrapper {
       padding: 0 25%;
       text-align: center;
+      @include respond-to('large') {
+        padding: 0 12%;
+      }
+      @include respond-to('medium') {
+        padding: 0 6%;
+      }
       .blog__text-name {
         @include font($altFontColor, $mainFont, 90px, 700, 27px);
         margin-bottom: 10%;
@@ -21,7 +27,6 @@
       p {
         @include font($altFontColor, $mainFont, 17px, 300, 27px);
         margin-bottom: 10%;
-
       }
     }
     .blog__gallery-wrapper {

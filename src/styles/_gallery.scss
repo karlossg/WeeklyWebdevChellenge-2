@@ -9,21 +9,20 @@
       align-content: center;  
     }
     .gallery__text-wrapper {
-      
       h2 {
         @include font($mainFontColor, $mainFont, 90px, 700, 27px);
-        // margin: 5%;
+        text-align: center;
+        margin: 5%;
         @include respond-to('large') {
           margin-bottom: 20%;
         }
         @include respond-to('medium') {
           margin-bottom: 20%;
-          padding-right: 300px;
         }
       }
       p {
         @include font($mainFontColor, $mainFont, 17px, 300, 27px);
-        margin-bottom: 10%;
+        margin-bottom: 5%;
       }
     }
     .gallery__images-wrapper {
@@ -59,6 +58,7 @@
       }
       .gallery__images-bottom {
         margin-bottom: 2%;
+        margin-top: 2%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
